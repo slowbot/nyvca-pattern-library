@@ -1,0 +1,60 @@
+.control {
+			text-align: right;
+		}
+		
+		.footer-nav-link {
+		  display: block;
+		  line-height: 2rem;
+		  margin-right: 1em;
+		}
+		
+		.footer-nav {
+			//border-top: 1px solid #808080;
+			margin: 0;
+		}
+		
+		.footer-nav li {
+		  float: none;
+		  display: block;
+		  
+		}
+		
+		.footer-nav a {
+			display: block;
+			padding: 0.8em 1em;
+			//border-bottom: 1px solid #808080;
+		}
+		
+		@include breakpoint( medium ) {
+			
+		.control {
+  		  margin-bottom: 2em;
+      }
+			
+			.footer-nav-link {
+				display: none;
+			}
+			
+			.footer-nav {
+				position: absolute;
+				top: 0;
+				left: 0;
+				border: 0;
+				margin: 0;
+				width: 100%;
+				
+				background-color: #000;
+				color: #fff;
+			}
+			
+			.footer-nav li {
+				float: left;
+				padding-right: 0;
+			}
+			
+			.footer-nav a {
+				padding: 0;
+				border: 0;
+				color: #fff;
+			}
+		}

@@ -1,0 +1,6 @@
+.underline { 
+  padding-bottom: remCalc( 7px );
+  border-bottom: 2px solid $tint-color; }
+
+/* Color */
+.tinted { background-color: $tint-color; }

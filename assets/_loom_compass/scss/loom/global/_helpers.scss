@@ -1,0 +1,17 @@
+@include breakpoint( medium ) {
+.right {
+    float: right;
+  }
+}
+
+.center {
+  text-align: center;
+}
+
+.rythmn-up {
+  padding-top: $base-rhythm-unit; 
+}
+
+footer {
+  display: block;
+}

@@ -1,0 +1,16 @@
+img, video, object {
+max-width: 100%;
+height: auto;
+}
+
+.squeeze-figure {
+  overflow: hidden;
+  
+  @include breakpoint( medium ) {
+    height: 22em;
+  }
+  
+  @include breakpoint( large ) {
+    height: 28em;
+  }
+}

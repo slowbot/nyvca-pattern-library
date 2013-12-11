@@ -1,0 +1,16 @@
+//
+// Responsive font-sizing
+// Uses $base-font-size
+//
+@function get-base-font-size( $base-font-size ) {
+
+   @include breakpoint( medium ) {
+    @return $base-font-size: $base-font-size-medium;
+   }
+   
+   @include breakpoint( large ) {
+    @return $base-font-size: $base-font-size-large;
+   }
+   
+   @return $base-font-size;
+}
