@@ -27,7 +27,7 @@ $size4of5-width: 80%;
 
 // Class Grid based on OOCSS 
 
-.row { 
+.row, %row { 
   width: 100%;
   padding: $row-padding; 
   
