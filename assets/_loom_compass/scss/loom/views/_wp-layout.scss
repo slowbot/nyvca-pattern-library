@@ -1,17 +1,32 @@
 //Layout
-#header .top, #header .bottom, #homepage, .we-are-nyc, .footer {
+#header .top, #header .bottom, #homepage, .footer,
+.points-bg .p1, .points-bg .p2, .points-bg .p3, .points-bg .p4 {
   @extend %row;
 }
 
+#header .logo,
+.footer .copyright {
+  float: left;
+}
+
 //Colors
-#header-ext, .footer {
+
+#header-ext {
+  text-align: center;
+
+  h2 { 
+  font-family: $font-family;
+  font-weight: 400;
+  font-style: italic; }
+}
+
+#header-ext, #footer-ext {
   color: $blank-color;
   background-color: $secondary-color;
   
   a { 
     color: $blank-color;
   }
-  
 }
 
 #page.hfeed {
@@ -21,5 +36,52 @@
   a { 
     color: $blank-color;
   }
+  
+  h2 { 
+    font-family: $font-family;
+    font-size: remCalc( 52px );
+    font-weight: 500;
+    line-height: remCalc( 52px );
+  }
+  
+}
 
+#header .bottom h1,
+#homepage h1,
+.we-are-nyc h2,
+.footer h2 {
+  font-family: $condensed-font-family;
+  font-weight: 400;
+  text-transform: uppercase;
+  text-align: center; 
+}
+
+.we-are-nyc {
+  padding-bottom: 0;
+}
+
+.we-are-nyc h2,
+.footer h2 {
+  font-size: remCalc( 72px );
+  padding: 3rem 0;
+  line-height: remCalc( 72px );
+}
+
+img {
+  display: block;
+  margin: 0 auto; 
+}
+
+#skyline {
+  text-align: center;
+}
+
+.partners h3 {
+  text-align: center;
+}
+
+.site-by {
+  clear: both;
+  display: block;
+  text-align: center;
 }

@@ -29,7 +29,7 @@ $size4of5-width: 80%;
 
 .row, %row { 
   width: 100%;
-  padding: $row-padding; 
+  padding: $row-padding * 2 $row-padding; 
   
   &:after {
     content: "";
@@ -57,7 +57,7 @@ $size4of5-width: 80%;
     max-width: $row-medium-max-width;
     margin-left: auto;
     margin-right: auto;
-    padding: $row-padding $row-padding * 4;    
+    padding: $row-padding * 2 $row-padding * 4;    
   }
   
   .row {

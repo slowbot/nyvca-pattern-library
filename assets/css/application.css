@@ -115,7 +115,7 @@ html {
 
 /* line 78, ../_loom_compass/scss/loom/global/_typography.scss */
 html {
-  font-family: "ff-meta-serif-web-pro", "ffmetaserifwebpro", Georgia, serif;
+  font-family: "Gotham SSm A", "Gotham SSm B", "HelveticaNeueLight", "HelveticaNeue-Light", "Helvetica Neue Light", "HelveticaNeueLight", "HelveticaNeue-Light", "Helvetica Neue Light", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
 /* line 84, ../_loom_compass/scss/loom/global/_typography.scss */
@@ -169,7 +169,7 @@ h1,
 /* line 105, ../_loom_compass/scss/loom/global/_typography.scss */
 h1,
 .alpha {
-  font-size: 2.57143rem;
+  font-size: 3.71429rem;
   line-height: 3.5rem;
 }
 
@@ -195,7 +195,7 @@ h4,
 h5,
 .epsilon {
   font-size: 1rem;
-  font-family: "proxima-nova", "proximanova", "HelveticaNeueLight", "HelveticaNeue-Light", "Helvetica Neue Light", "HelveticaNeueLight", "HelveticaNeue-Light", "Helvetica Neue Light", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "Gotham SSm A", "Gotham SSm B", "HelveticaNeueLight", "HelveticaNeue-Light", "Helvetica Neue Light", "HelveticaNeueLight", "HelveticaNeue-Light", "Helvetica Neue Light", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
   text-transform: uppercase;
   line-height: 2rem;
 }
@@ -217,10 +217,15 @@ a {
   text-decoration: none;
 }
 
-/* line 161, ../_loom_compass/scss/loom/global/_typography.scss */
+/* line 160, ../_loom_compass/scss/loom/global/_typography.scss */
+.serif {
+  font-family: "Sentinel SSm A", "Sentinel SSm B", Georgia, serif;
+}
+
+/* line 165, ../_loom_compass/scss/loom/global/_typography.scss */
 nav li,
 .sans {
-  font-family: "proxima-nova", "proximanova", "HelveticaNeueLight", "HelveticaNeue-Light", "Helvetica Neue Light", "HelveticaNeueLight", "HelveticaNeue-Light", "Helvetica Neue Light", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "Gotham SSm A", "Gotham SSm B", "HelveticaNeueLight", "HelveticaNeue-Light", "Helvetica Neue Light", "HelveticaNeueLight", "HelveticaNeue-Light", "Helvetica Neue Light", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
   text-transform: uppercase;
 }
 
@@ -291,7 +296,7 @@ a.menu-link {
   padding: 1em;
 }
 
-/* line 6, ../_loom_compass/scss/loom/layout/_navigation.scss */
+/* line 7, ../_loom_compass/scss/loom/layout/_navigation.scss */
 nav[role=navigation] {
   clear: both;
   -webkit-transition: all 0.3s ease-out;
@@ -301,25 +306,25 @@ nav[role=navigation] {
   transition: all 0.3s ease-out;
 }
 
-/* line 14, ../_loom_compass/scss/loom/layout/_navigation.scss */
+/* line 15, ../_loom_compass/scss/loom/layout/_navigation.scss */
 .js nav[role=navigation] {
   overflow: hidden;
   max-height: 0;
 }
 
-/* line 18, ../_loom_compass/scss/loom/layout/_navigation.scss */
+/* line 19, ../_loom_compass/scss/loom/layout/_navigation.scss */
 nav[role=navigation].active {
   max-height: 15em;
 }
 
-/* line 21, ../_loom_compass/scss/loom/layout/_navigation.scss */
+/* line 22, ../_loom_compass/scss/loom/layout/_navigation.scss */
 nav[role=navigation] ul {
   margin: 0;
   padding: 0;
   border-top: 1px solid #808080;
 }
 
-/* line 26, ../_loom_compass/scss/loom/layout/_navigation.scss */
+/* line 27, ../_loom_compass/scss/loom/layout/_navigation.scss */
 nav[role=navigation] li a {
   display: block;
   padding: 0.8em;
@@ -327,29 +332,29 @@ nav[role=navigation] li a {
 }
 
 @media only screen and (min-width: 54.85714em) {
-  /* line 33, ../_loom_compass/scss/loom/layout/_navigation.scss */
+  /* line 34, ../_loom_compass/scss/loom/layout/_navigation.scss */
   a.menu-link {
     display: none;
   }
 
-  /* line 36, ../_loom_compass/scss/loom/layout/_navigation.scss */
+  /* line 37, ../_loom_compass/scss/loom/layout/_navigation.scss */
   .js nav[role=navigation] {
     max-height: none;
   }
 
-  /* line 39, ../_loom_compass/scss/loom/layout/_navigation.scss */
+  /* line 40, ../_loom_compass/scss/loom/layout/_navigation.scss */
   nav[role=navigation] ul {
     margin: 0 0 0 -0.25em;
     border: 0;
   }
 
-  /* line 44, ../_loom_compass/scss/loom/layout/_navigation.scss */
+  /* line 45, ../_loom_compass/scss/loom/layout/_navigation.scss */
   nav[role=navigation] li {
     display: inline-block;
     margin: 0 0.25em;
   }
 
-  /* line 48, ../_loom_compass/scss/loom/layout/_navigation.scss */
+  /* line 49, ../_loom_compass/scss/loom/layout/_navigation.scss */
   nav[role=navigation] li a {
     border: 0;
   }
@@ -390,46 +395,54 @@ footer {
 }
 
 /* line 30, ../_loom_compass/scss/loom/layout/_grid.scss */
-.row, #header .top, #header .bottom, #homepage, .we-are-nyc, .footer {
+.row, #header .top, #header .bottom, #homepage, .footer,
+.points-bg .p1, .points-bg .p2, .points-bg .p3, .points-bg .p4 {
   width: 100%;
-  padding: 24px;
+  padding: 48px 24px;
 }
 /* line 34, ../_loom_compass/scss/loom/layout/_grid.scss */
-.row:after, #header .top:after, #header .bottom:after, #homepage:after, .we-are-nyc:after, .footer:after {
+.row:after, #header .top:after, #header .bottom:after, #homepage:after, .footer:after,
+.points-bg .p1:after, .points-bg .p2:after, .points-bg .p3:after, .points-bg .p4:after {
   content: "";
   display: table;
   clear: both;
 }
 /* line 40, ../_loom_compass/scss/loom/layout/_grid.scss */
-.row.collapse, #header .collapse.top, #header .collapse.bottom, .collapse#homepage, .collapse.we-are-nyc, .collapse.footer {
+.row.collapse, #header .collapse.top, #header .collapse.bottom, .collapse#homepage, .collapse.footer,
+.points-bg .collapse.p1, .points-bg .collapse.p2, .points-bg .collapse.p3, .points-bg .collapse.p4 {
   padding: 0;
 }
 /* line 44, ../_loom_compass/scss/loom/layout/_grid.scss */
-.row.collapse-tall, #header .collapse-tall.top, #header .collapse-tall.bottom, .collapse-tall#homepage, .collapse-tall.we-are-nyc, .collapse-tall.footer {
+.row.collapse-tall, #header .collapse-tall.top, #header .collapse-tall.bottom, .collapse-tall#homepage, .collapse-tall.footer,
+.points-bg .collapse-tall.p1, .points-bg .collapse-tall.p2, .points-bg .collapse-tall.p3, .points-bg .collapse-tall.p4 {
   padding: 0;
 }
 @media only screen and (min-width: 54.85714em) {
   /* line 44, ../_loom_compass/scss/loom/layout/_grid.scss */
-  .row.collapse-tall, #header .collapse-tall.top, #header .collapse-tall.bottom, .collapse-tall#homepage, .collapse-tall.we-are-nyc, .collapse-tall.footer {
+  .row.collapse-tall, #header .collapse-tall.top, #header .collapse-tall.bottom, .collapse-tall#homepage, .collapse-tall.footer,
+  .points-bg .collapse-tall.p1, .points-bg .collapse-tall.p2, .points-bg .collapse-tall.p3, .points-bg .collapse-tall.p4 {
     padding: 0 96px;
   }
 }
 /* line 51, ../_loom_compass/scss/loom/layout/_grid.scss */
-.row.full, #header .full.top, #header .full.bottom, .full#homepage, .full.we-are-nyc, .full.footer {
+.row.full, #header .full.top, #header .full.bottom, .full#homepage, .full.footer,
+.points-bg .full.p1, .points-bg .full.p2, .points-bg .full.p3, .points-bg .full.p4 {
   padding: 0;
   max-width: 100%;
 }
 @media only screen and (min-width: 54.85714em) {
   /* line 30, ../_loom_compass/scss/loom/layout/_grid.scss */
-  .row, #header .top, #header .bottom, #homepage, .we-are-nyc, .footer {
+  .row, #header .top, #header .bottom, #homepage, .footer,
+  .points-bg .p1, .points-bg .p2, .points-bg .p3, .points-bg .p4 {
     max-width: 85.71429em;
     margin-left: auto;
     margin-right: auto;
-    padding: 24px 96px;
+    padding: 48px 96px;
   }
 }
 /* line 63, ../_loom_compass/scss/loom/layout/_grid.scss */
-.row .row, #header .top .row, #header .bottom .row, #homepage .row, .we-are-nyc .row, .footer .row {
+.row .row, #header .top .row, #header .bottom .row, #homepage .row, .footer .row,
+.points-bg .p1 .row, .points-bg .p2 .row, .points-bg .p3 .row, .points-bg .p4 .row {
   margin-left: 0;
   margin-right: 0;
   padding: 0;
@@ -587,23 +600,137 @@ footer {
 
 /* WP Import */
 /* Wp-navigation */
+/* line 2, ../_loom_compass/scss/loom/views/_wp-navigation.scss */
+#menu-header-menu,
+#menu-footer-menu {
+  clear: both;
+}
+
+/* line 7, ../_loom_compass/scss/loom/views/_wp-navigation.scss */
+#menu-header-menu .menu-item,
+#menu-footer-menu .menu-item {
+  display: block;
+  text-align: left;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+/* line 13, ../_loom_compass/scss/loom/views/_wp-navigation.scss */
+#menu-header-menu a {
+  font-family: "Gotham SSm A", "Gotham SSm B", "HelveticaNeueLight", "HelveticaNeue-Light", "Helvetica Neue Light", "HelveticaNeueLight", "HelveticaNeue-Light", "Helvetica Neue Light", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 0.85714rem;
+  border: none;
+  display: block;
+  position: relative;
+}
+
+@media only screen and (min-width: 54.85714em) {
+  /* line 25, ../_loom_compass/scss/loom/views/_wp-navigation.scss */
+  #header .menu,
+  .footer .menu {
+    float: right;
+  }
+
+  /* line 30, ../_loom_compass/scss/loom/views/_wp-navigation.scss */
+  #menu-header-menu .menu-item,
+  #menu-footer-menu .menu-item {
+    display: inline-block;
+    border: 0;
+  }
+
+  /* line 36, ../_loom_compass/scss/loom/views/_wp-navigation.scss */
+  #menu-header-menu a,
+  #menu-footer-menu a {
+    padding: 0 2em;
+  }
+}
 /* Wp-layout */
-/* line 7, ../_loom_compass/scss/loom/views/_wp-layout.scss */
-#header-ext, .footer {
+/* line 8, ../_loom_compass/scss/loom/views/_wp-layout.scss */
+#header .logo,
+.footer .copyright {
+  float: left;
+}
+
+/* line 14, ../_loom_compass/scss/loom/views/_wp-layout.scss */
+#header-ext {
+  text-align: center;
+}
+/* line 17, ../_loom_compass/scss/loom/views/_wp-layout.scss */
+#header-ext h2 {
+  font-family: "Sentinel SSm A", "Sentinel SSm B", Georgia, serif;
+  font-weight: 400;
+  font-style: italic;
+}
+
+/* line 23, ../_loom_compass/scss/loom/views/_wp-layout.scss */
+#header-ext, #footer-ext {
   color: white;
   background-color: #182033;
 }
-/* line 11, ../_loom_compass/scss/loom/views/_wp-layout.scss */
-#header-ext a, .footer a {
+/* line 27, ../_loom_compass/scss/loom/views/_wp-layout.scss */
+#header-ext a, #footer-ext a {
   color: white;
 }
 
-/* line 17, ../_loom_compass/scss/loom/views/_wp-layout.scss */
+/* line 32, ../_loom_compass/scss/loom/views/_wp-layout.scss */
 #page.hfeed {
   color: white;
   background-color: #de7c35;
 }
-/* line 21, ../_loom_compass/scss/loom/views/_wp-layout.scss */
+/* line 36, ../_loom_compass/scss/loom/views/_wp-layout.scss */
 #page.hfeed a {
   color: white;
+}
+/* line 40, ../_loom_compass/scss/loom/views/_wp-layout.scss */
+#page.hfeed h2 {
+  font-family: "Sentinel SSm A", "Sentinel SSm B", Georgia, serif;
+  font-size: 3.71429rem;
+  font-weight: 500;
+  line-height: 3.71429rem;
+}
+
+/* line 52, ../_loom_compass/scss/loom/views/_wp-layout.scss */
+#header .bottom h1,
+#homepage h1,
+.we-are-nyc h2,
+.footer h2 {
+  font-family: "Knockout 26 A", "Knockout 26 B", "HelveticaNeueLightCondensed", "HelveticaNeue-Light-Condensed", "Helvetica Neue Light Condensed", "HelveticaNeueLight", "HelveticaNeue-Light", "Helvetica Neue Light", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: 400;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+/* line 59, ../_loom_compass/scss/loom/views/_wp-layout.scss */
+.we-are-nyc {
+  padding-bottom: 0;
+}
+
+/* line 64, ../_loom_compass/scss/loom/views/_wp-layout.scss */
+.we-are-nyc h2,
+.footer h2 {
+  font-size: 5.14286rem;
+  padding: 3rem 0;
+  line-height: 5.14286rem;
+}
+
+/* line 70, ../_loom_compass/scss/loom/views/_wp-layout.scss */
+img {
+  display: block;
+  margin: 0 auto;
+}
+
+/* line 75, ../_loom_compass/scss/loom/views/_wp-layout.scss */
+#skyline {
+  text-align: center;
+}
+
+/* line 79, ../_loom_compass/scss/loom/views/_wp-layout.scss */
+.partners h3 {
+  text-align: center;
+}
+
+/* line 83, ../_loom_compass/scss/loom/views/_wp-layout.scss */
+.site-by {
+  clear: both;
+  display: block;
+  text-align: center;
 }
