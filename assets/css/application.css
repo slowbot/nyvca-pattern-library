@@ -588,3 +588,22 @@ footer {
 /* WP Import */
 /* Wp-navigation */
 /* Wp-layout */
+/* line 7, ../_loom_compass/scss/loom/views/_wp-layout.scss */
+#header-ext, .footer {
+  color: white;
+  background-color: #182033;
+}
+/* line 11, ../_loom_compass/scss/loom/views/_wp-layout.scss */
+#header-ext a, .footer a {
+  color: white;
+}
+
+/* line 17, ../_loom_compass/scss/loom/views/_wp-layout.scss */
+#page.hfeed {
+  color: white;
+  background-color: #de7c35;
+}
+/* line 21, ../_loom_compass/scss/loom/views/_wp-layout.scss */
+#page.hfeed a {
+  color: white;
+}

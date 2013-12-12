@@ -1,3 +1,25 @@
+//Layout
 #header .top, #header .bottom, #homepage, .we-are-nyc, .footer {
   @extend %row;
+}
+
+//Colors
+#header-ext, .footer {
+  color: $blank-color;
+  background-color: $secondary-color;
+  
+  a { 
+    color: $blank-color;
+  }
+  
+}
+
+#page.hfeed {
+  color: $blank-color;
+  background-color: $primary-color;
+
+  a { 
+    color: $blank-color;
+  }
+
 }
