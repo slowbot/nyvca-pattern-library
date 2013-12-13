@@ -14,7 +14,7 @@
   @extend %rythmn-unit;
 }
 
-//Colors
+//Header
 
 #header-ext {
   text-align: center;
@@ -38,7 +38,9 @@
   padding: $row-padding;
 }
 
-#page.hfeed {
+//Featured Event
+
+#homepage {
   color: $blank-color;
   background-color: $primary-color;
 
@@ -71,6 +73,7 @@
   text-align: center; 
 }
 
+//Timeline
 .we-are-nyc {
   padding-bottom: 0;
 }
@@ -114,8 +117,9 @@ img {
   display: block;
 }
 
+//Footer
 #skyline {
-  position: absolute;
+  //position: absolute;
   width: 100%;
   text-align: center;
   bottom: 0;
@@ -143,4 +147,41 @@ img {
   clear: both;
   display: block;
   text-align: center;
+}
+
+//Agenda
+
+%agenda-rythmn {
+  padding-top: $base-line-height / $base-font-size * 1rem;
+  padding-bottom: $base-line-height / $base-font-size * 1rem;
+   
+   @include breakpoint( medium ) {
+   padding-top: $medium-line-height / $medium-font-size * 1rem;
+   padding-bottom: $medium-line-height / $medium-font-size * 1rem;
+   }
+   
+   @include breakpoint( large ) {
+   padding-top: $large-line-height / $large-font-size * 1rem;
+   padding-bottom: $large-line-height / $large-font-size * 1rem;
+   }
+}
+
+ol.event-agenda {
+  list-style-type: none;
+}
+
+.session { 
+  overflow: hidden;
+  padding-left: .5em;
+  padding-right: .5em;
+  @extend %agenda-rythmn;
+}
+
+ol.event-agenda .session:nth-child(even) {
+  background-color: rgba(0,0,0,.05);
+}
+
+@include breakpoint( medium ) {
+
+
 }

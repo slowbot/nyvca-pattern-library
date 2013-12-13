@@ -213,15 +213,16 @@ p {
 
 /* line 155, ../_loom_compass/scss/loom/global/_typography.scss */
 a {
+  color: #de7c35;
   text-decoration: none;
 }
 
-/* line 159, ../_loom_compass/scss/loom/global/_typography.scss */
+/* line 160, ../_loom_compass/scss/loom/global/_typography.scss */
 .serif {
   font-family: "Sentinel SSm A", "Sentinel SSm B", Georgia, serif;
 }
 
-/* line 164, ../_loom_compass/scss/loom/global/_typography.scss */
+/* line 165, ../_loom_compass/scss/loom/global/_typography.scss */
 nav li,
 .sans {
   font-family: "Gotham SSm A", "Gotham SSm B", "HelveticaNeueLight", "HelveticaNeue-Light", "Helvetica Neue Light", "HelveticaNeueLight", "HelveticaNeue-Light", "Helvetica Neue Light", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
@@ -597,7 +598,8 @@ footer {
   clear: both;
 }
 
-/* line 7, ../_loom_compass/scss/loom/views/_wp-navigation.scss */
+/* line 8, ../_loom_compass/scss/loom/views/_wp-navigation.scss */
+.nav li,
 #menu-header-menu .menu-item,
 #menu-footer-menu .menu-item {
   display: block;
@@ -605,7 +607,8 @@ footer {
   border-top: 1px solid rgba(255, 255, 255, 0.1);
 }
 
-/* line 14, ../_loom_compass/scss/loom/views/_wp-navigation.scss */
+/* line 16, ../_loom_compass/scss/loom/views/_wp-navigation.scss */
+.nav li a,
 #menu-header-menu a,
 #menu-footer-menu a {
   font-family: "Gotham SSm A", "Gotham SSm B", "HelveticaNeueLight", "HelveticaNeue-Light", "Helvetica Neue Light", "HelveticaNeueLight", "HelveticaNeue-Light", "Helvetica Neue Light", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
@@ -617,23 +620,29 @@ footer {
 }
 
 @media only screen and (min-width: 54.85714em) {
-  /* line 27, ../_loom_compass/scss/loom/views/_wp-navigation.scss */
+  /* line 29, ../_loom_compass/scss/loom/views/_wp-navigation.scss */
   #header .menu,
   .footer .menu {
     float: right;
   }
 
-  /* line 32, ../_loom_compass/scss/loom/views/_wp-navigation.scss */
+  /* line 35, ../_loom_compass/scss/loom/views/_wp-navigation.scss */
+  .nav li,
   #menu-header-menu .menu-item,
   #menu-footer-menu .menu-item {
     display: inline-block;
     border: 0;
   }
 
-  /* line 38, ../_loom_compass/scss/loom/views/_wp-navigation.scss */
+  /* line 41, ../_loom_compass/scss/loom/views/_wp-navigation.scss */
   #menu-header-menu a,
   #menu-footer-menu a {
     padding: 0 2em;
+  }
+
+  /* line 45, ../_loom_compass/scss/loom/views/_wp-navigation.scss */
+  .nav li a {
+    padding-right: 2em;
   }
 }
 /* Wp-layout */
@@ -671,35 +680,35 @@ footer {
   padding: 24px;
 }
 
-/* line 41, ../_loom_compass/scss/loom/views/_wp-layout.scss */
-#page.hfeed {
+/* line 43, ../_loom_compass/scss/loom/views/_wp-layout.scss */
+#homepage {
   color: white;
   background-color: #de7c35;
 }
-/* line 45, ../_loom_compass/scss/loom/views/_wp-layout.scss */
-#page.hfeed a {
+/* line 47, ../_loom_compass/scss/loom/views/_wp-layout.scss */
+#homepage a {
   color: white;
 }
-/* line 49, ../_loom_compass/scss/loom/views/_wp-layout.scss */
-#page.hfeed h2 {
+/* line 51, ../_loom_compass/scss/loom/views/_wp-layout.scss */
+#homepage h2 {
   font-family: "Sentinel SSm A", "Sentinel SSm B", Georgia, serif;
   font-size: 3.71429rem;
   font-weight: 500;
   line-height: 3.71429rem;
 }
 @media only screen and (min-width: 54.85714em) {
-  /* line 49, ../_loom_compass/scss/loom/views/_wp-layout.scss */
-  #page.hfeed h2 {
+  /* line 51, ../_loom_compass/scss/loom/views/_wp-layout.scss */
+  #homepage h2 {
     font-size: 5.14286rem;
   }
 }
 
-/* line 60, ../_loom_compass/scss/loom/views/_wp-layout.scss */
+/* line 62, ../_loom_compass/scss/loom/views/_wp-layout.scss */
 .fig-border {
   border: 0.5em solid white;
 }
 
-/* line 67, ../_loom_compass/scss/loom/views/_wp-layout.scss */
+/* line 69, ../_loom_compass/scss/loom/views/_wp-layout.scss */
 #header .bottom h1,
 #homepage h1,
 .we-are-nyc h2,
@@ -710,12 +719,12 @@ footer {
   text-align: center;
 }
 
-/* line 74, ../_loom_compass/scss/loom/views/_wp-layout.scss */
+/* line 77, ../_loom_compass/scss/loom/views/_wp-layout.scss */
 .we-are-nyc {
   padding-bottom: 0;
 }
 
-/* line 79, ../_loom_compass/scss/loom/views/_wp-layout.scss */
+/* line 82, ../_loom_compass/scss/loom/views/_wp-layout.scss */
 .we-are-nyc h2,
 .footer h2 {
   font-size: 5.14286rem;
@@ -723,78 +732,114 @@ footer {
   line-height: 5.14286rem;
 }
 
-/* line 85, ../_loom_compass/scss/loom/views/_wp-layout.scss */
+/* line 88, ../_loom_compass/scss/loom/views/_wp-layout.scss */
 .point {
   min-height: 28.57143em;
 }
 
-/* line 89, ../_loom_compass/scss/loom/views/_wp-layout.scss */
+/* line 92, ../_loom_compass/scss/loom/views/_wp-layout.scss */
 .right {
   float: right;
 }
 
-/* line 93, ../_loom_compass/scss/loom/views/_wp-layout.scss */
+/* line 96, ../_loom_compass/scss/loom/views/_wp-layout.scss */
 .bg-photo {
   color: white;
   background-color: #182033;
 }
 
-/* line 98, ../_loom_compass/scss/loom/views/_wp-layout.scss */
+/* line 101, ../_loom_compass/scss/loom/views/_wp-layout.scss */
 .bg-graphic {
   position: relative;
 }
 
-/* line 102, ../_loom_compass/scss/loom/views/_wp-layout.scss */
+/* line 105, ../_loom_compass/scss/loom/views/_wp-layout.scss */
 .p-centered {
   text-align: center;
 }
 @media only screen and (min-width: 54.85714em) {
-  /* line 102, ../_loom_compass/scss/loom/views/_wp-layout.scss */
+  /* line 105, ../_loom_compass/scss/loom/views/_wp-layout.scss */
   .p-centered {
     padding: 0 96px;
   }
 }
 
-/* line 109, ../_loom_compass/scss/loom/views/_wp-layout.scss */
+/* line 112, ../_loom_compass/scss/loom/views/_wp-layout.scss */
 .p-right {
   text-align: right;
 }
 
-/* line 113, ../_loom_compass/scss/loom/views/_wp-layout.scss */
+/* line 116, ../_loom_compass/scss/loom/views/_wp-layout.scss */
 img {
   display: block;
 }
 
-/* line 117, ../_loom_compass/scss/loom/views/_wp-layout.scss */
+/* line 121, ../_loom_compass/scss/loom/views/_wp-layout.scss */
 #skyline {
-  position: absolute;
   width: 100%;
   text-align: center;
   bottom: 0;
 }
-/* line 123, ../_loom_compass/scss/loom/views/_wp-layout.scss */
+/* line 127, ../_loom_compass/scss/loom/views/_wp-layout.scss */
 #skyline img {
   margin: 0 auto;
 }
 
-/* line 126, ../_loom_compass/scss/loom/views/_wp-layout.scss */
+/* line 130, ../_loom_compass/scss/loom/views/_wp-layout.scss */
 .partners h3 {
   text-align: center;
 }
 
-/* line 132, ../_loom_compass/scss/loom/views/_wp-layout.scss */
+/* line 136, ../_loom_compass/scss/loom/views/_wp-layout.scss */
 .footer-sponsor-group img {
   margin: 0 auto;
 }
 
-/* line 137, ../_loom_compass/scss/loom/views/_wp-layout.scss */
+/* line 141, ../_loom_compass/scss/loom/views/_wp-layout.scss */
 .copyright, .site-by {
   font-size: 0.85714rem;
 }
 
-/* line 142, ../_loom_compass/scss/loom/views/_wp-layout.scss */
+/* line 146, ../_loom_compass/scss/loom/views/_wp-layout.scss */
 .site-by {
   clear: both;
   display: block;
   text-align: center;
+}
+
+/* line 154, ../_loom_compass/scss/loom/views/_wp-layout.scss */
+.session {
+  padding-top: 1.71429rem;
+  padding-bottom: 1.71429rem;
+}
+@media only screen and (min-width: 54.85714em) {
+  /* line 154, ../_loom_compass/scss/loom/views/_wp-layout.scss */
+  .session {
+    padding-top: 1.75rem;
+    padding-bottom: 1.75rem;
+  }
+}
+@media only screen and (min-width: 85.71429em) {
+  /* line 154, ../_loom_compass/scss/loom/views/_wp-layout.scss */
+  .session {
+    padding-top: 1.66667rem;
+    padding-bottom: 1.66667rem;
+  }
+}
+
+/* line 169, ../_loom_compass/scss/loom/views/_wp-layout.scss */
+ol.event-agenda {
+  list-style-type: none;
+}
+
+/* line 173, ../_loom_compass/scss/loom/views/_wp-layout.scss */
+.session {
+  overflow: hidden;
+  padding-left: .5em;
+  padding-right: .5em;
+}
+
+/* line 180, ../_loom_compass/scss/loom/views/_wp-layout.scss */
+ol.event-agenda .session:nth-child(even) {
+  background-color: rgba(0, 0, 0, 0.05);
 }

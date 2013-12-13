@@ -112,8 +112,8 @@ jQuery(document).ready(function($) {
 	</div>
 </div>
 
-<div id="page" class="hfeed" style="background: #f2eee4" >
-	<div class="single-event ingenuity row" style="background: #fff">
+<div id="page" class="hfeed">
+	<div class="single-event ingenuity row">
 	<div>
 		<div class="nav ingenuity">
 			<ul>
@@ -130,13 +130,51 @@ jQuery(document).ready(function($) {
 		</div>
 		<div class="left-col wide">
 			
-			<div class="panel active" rel="summary">
+			<div class="active" rel="summary">
 				<br />
 				<div class="info" id="highlights">
 					<p>Ingenuity is a senior level, high-impact forum to showcase select entrepreneurs from premier early &amp; late stage organizations based in the greater New York area to meet top-tier venture capitalists and investors. The invitation-only event provides investors with access to quality, professionally screened, high-potential investment opportunities. Ingenuity provides a powerful sponsorship opportunity for select companies seeking to develop and strengthen relationships with the best emerging venture-backed companies on the East Coast and top-level angels, venture investors, private equity, and corporate dealmakers.</p>
 				</div>
-
-				<h3 style="padding-left: 4px; ">2013 Highlights</h3>
+        
+        <!-- Agenda Markup -->
+        <ol class="event-agenda">
+          <li class="session">
+            <time class="column size1of5">9:05am-9:10am</time>
+            <div class="session-description column size4of5">
+              <h2>Building a Leading Online & Offline Brand</h2>
+              <ul class="people">
+                <li>Dave Gilboa, Co-CEO & Co-founder, Warby Parker</li>
+                <li>Chris Fralic, Partner, First Round Capital & Co-Chair, INGENUITY 2013</li>
+              </ul>
+            </div>
+          </li>
+          <li class="session">
+            <time class="column size1of5">9:05am-9:10am</time>
+            <div class="session-description column size4of5">
+              <h2>Networking</h2>
+            </div>
+          </li>
+          <li class="session">
+            <time class="column size1of5">9:05am-9:10am</time>
+            <div class="session-description column size4of5">
+              <dl class="track1 column size1of2">
+                <dt>Track 1</dt>
+                <dd>Company 1</dd>
+                <dd>Company 2</dd>
+                <dd>Company 3</dd>
+              </dl>
+              <dl class="track2 column size1of2">
+                <dt>Track 2</dt>
+                <dd>Company 1</dd>
+                <dd>Company 2</dd>
+                <dd>Company 3</dd>
+              </dl>
+            </div>
+          </li>
+        </ol>
+        <div class="clear"></div>
+        
+				<h3>2013 Highlights</h3>
 				
 				<img src="http://www.nyvca.org/wp-content/uploads/2013/11/guests1.jpg" />
 				
@@ -833,67 +871,69 @@ Mr. Siegel previously led Yahoo! Inc.’s corporate development activities. He w
 
 		</div><!-- #page -->
 	<div id="skyline"><img src="http://nyvca.mistermachinework.com/wp-content/themes/nyvca/img/skyline-bg3.png" /></div>
-		<div id="footer-ext">
-		<div class="footer">
-			<div class="partners">
-								<h2>Partners</h2>
-				<div class="subscribe">
-						<script type="text/javascript">
-		jQuery(document).ready(function($) {
-			$('#signup').validate({rules: {nl_email: {required: true, email: true}}});
-
-			$('#signup_nl_email').keypress(function(e){
-				if (e.keyCode == 13) $('#signup').submit();
-				else return true;
-				e.preventDefault();
-
-				return false;
-			});
-
-			$('#signup').live('submit', function(){
-				var values = $('#signup').serialize();
-				$.post('/wp-admin/admin-ajax.php?action=newslettersignup', values, function(data){
-					if (!data['success']) {
-						alert(data['error']);
-					} else {
-						$('#signup_nl_email').val('');
-						$('#signup').find('.infos').show().html('You have successfully subscribed to our Newsletter.');
-						$('#signup').hide(3000);
-					}
-				}, 'json');
-				return false;
-			});
-		});
-	</script>
-	<form action="" method="post" class="join-now" id="signup">
-		<input type="hidden" name="na" value="s">
-		<input type="text" name="nl_email" id="signup_nl_email" placeholder="Get Updates via Email" class="input-special"> <input type="submit" class="button blue border" value="Subscribe" /><br />
-		<label for="signup_nl_email" generated="true" class="error" style="display: none;">This field is required.</label>
-		<span class="infos"></span>
-	</form>
-				</div>
-				<div class="clear"></div>
-				<h3>Cornerstone Partners</h3>
-				<div><img src="http://nyvca.mistermachinework.com/wp-content/themes/nyvca/img/partners6.png" /></div><br />
-				<h3>Corporate Sponsors</h3>
-				<div><img src="http://nyvca.mistermachinework.com/wp-content/themes/nyvca/img/corporate3.png" /></div>
-								<h3>Industry Partners</h3>
-				<div><img src="http://nyvca.mistermachinework.com/wp-content/themes/nyvca/img/industry2.png" /></div>
-			</div>
-			<div class="copyright">&copy; New York Venture Capital Association 2009-2013</div>
-			<div class="menu"><div class="menu-footer-menu-container"><ul id="menu-footer-menu" class="menu"><li id="menu-item-76" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-76"><a href="http://nyvca.mistermachinework.com/about/">About</a></li>
-<li id="menu-item-203" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-203"><a href="http://nyvca.mistermachinework.com/partners/">Partners</a></li>
-<li id="menu-item-75" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-75"><a href="http://nyvca.mistermachinework.com/events/">Events</a></li>
-<li id="menu-item-204" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-204"><a href="http://nyvca.mistermachinework.com/contact/">Contact</a></li>
-</ul></div></div>
-			<div class="clear"></div>
-			<div class="site-by">
-				Site design by<br />
-				<a href="http://www.mistermachine.com"><span>Mister Machine</span></a>
-			</div>
-		</div>
-	</div>
-	<div class="clear"></div>
+  <div id="footer-ext">
+    <div class="footer">
+      <div class="partners">
+        <h2>Partners</h2>
+        <div class="subscribe">
+          <script type="text/javascript">
+          jQuery(document).ready(function($) {
+          $('#signup').validate({rules: {nl_email: {required: true, email: true}}});
+          
+          $('#signup_nl_email').keypress(function(e){
+          if (e.keyCode == 13) $('#signup').submit();
+          else return true;
+          e.preventDefault();
+          
+          return false;
+          });
+          
+          $('#signup').live('submit', function(){
+          var values = $('#signup').serialize();
+          $.post('/wp-admin/admin-ajax.php?action=newslettersignup', values, function(data){
+          if (!data['success']) {
+          alert(data['error']);
+          } else {
+          $('#signup_nl_email').val('');
+          $('#signup').find('.infos').show().html('You have successfully subscribed to our Newsletter.');
+          $('#signup').hide(3000);
+          }
+          }, 'json');
+          return false;
+          });
+          });
+          </script>
+          <!--form action="" method="post" class="join-now" id="signup">
+            <input type="hidden" name="na" value="s">
+            <input type="text" name="nl_email" id="signup_nl_email" placeholder="Get Updates via Email" class="input-special"> <input type="submit" class="button blue border" value="Subscribe" /><br />
+            <label for="signup_nl_email" generated="true" class="error" style="display: none;">This field is required.</label>
+            <span class="infos"></span>
+          </form-->
+        </div>
+        <div class="clear"></div>
+        
+        <h3 class="epsilon">Cornerstone Partners</h3>
+        <div class="footer-sponsor-group"><img src="http://nyvca.mistermachinework.com/wp-content/themes/nyvca/img/partners6.png" /></div><br />
+        <h3 class="epsilon">Corporate Sponsors</h3>
+        <div class="footer-sponsor-group"><img src="http://nyvca.mistermachinework.com/wp-content/themes/nyvca/img/corporate3.png" /></div>
+        <h3 class="epsilon">Industry Partners</h3>
+        <div class="footer-sponsor-group"><img src="http://nyvca.mistermachinework.com/wp-content/themes/nyvca/img/industry2.png" /></div>
+      </div>
+      <div class="copyright">&copy; New York Venture Capital Association 2009-2013</div>
+      <div class="menu"><div class="menu-footer-menu-container">
+        <ul id="menu-footer-menu" class="menu">
+          <li id="menu-item-76" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-76"><a href="http://nyvca.mistermachinework.com/about/">About</a></li>
+          <li id="menu-item-203" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-203"><a href="http://nyvca.mistermachinework.com/partners/">Partners</a></li>
+          <li id="menu-item-75" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-75"><a href="http://nyvca.mistermachinework.com/events/">Events</a></li>
+          <li id="menu-item-204" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-204"><a href="http://nyvca.mistermachinework.com/contact/">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="clear"></div>
+    
+    <div class="site-by">Site design by<br /><a href="http://www.mistermachine.com"><span>Mister Machine</span></a></div>
+  </div>
+  <div class="clear"></div>
 
 
 <script type='text/javascript' src='http://ajax.aspnetcdn.com/ajax/jquery.validate/1.8.1/jquery.validate.min.js?ver=3.7.1'></script>
