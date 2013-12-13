@@ -77,6 +77,7 @@ $type-scale-unit-value: rem !default;
 
 html {
   font-family: $sans-font-family;
+  font-weight: 300;
   @extend %font-size;
 }
 
@@ -85,7 +86,7 @@ html {
 	text-rendering: optimizeLegibility; // voodoo to enable ligatures and kerning
 
 	display: block;
-	font-weight: normal;
+	font-weight: 300;
 }
 
 %rythmn-unit {
@@ -133,10 +134,8 @@ h4,
 h5,
 .epsilon {
   font-size: remCalc( 14px );
-	font-family: $sans-font-family;
-	text-transform: uppercase;
 	@extend %hN;
-	line-height: remCalc( 28px ) ;
+	line-height: remCalc( 28px );
 	@extend %rythmn-unit;
 }
 
@@ -144,7 +143,7 @@ h6,
 .zeta {
   font-size: remCalc( 16px );
 	@extend %hN;
-	line-height: remCalc( 22px ) ;
+	line-height: remCalc( 22px );
 	@extend %rythmn-unit;
 }
 

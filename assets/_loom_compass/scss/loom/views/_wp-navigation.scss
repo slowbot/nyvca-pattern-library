@@ -10,9 +10,11 @@
 	border-top: 1px solid rgba(255, 255, 255, 0.1);
 }
 
-#menu-header-menu a {
+#menu-header-menu a,
+#menu-footer-menu a {
 	font-family: $sans-font-family;
 	font-size: remCalc( 12px );
+	padding: 1em 0;
 	border: none;
 
 	display: block;
