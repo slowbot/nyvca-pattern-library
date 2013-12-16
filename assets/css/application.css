@@ -5,6 +5,16 @@
 /* Font Smoothing */
 /* Text Size Adjust */
 /* Modules */
+/* Nav Top Bar */
+/* line 1, ../_loom_compass/scss/loom/modules/_control.scss */
+.logo {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  width: 330px;
+}
+
 /* Globals */
 /* Reset */
 /* Reset */
