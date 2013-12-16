@@ -4,3 +4,6 @@
 
 /* Color */
 .tinted { background-color: $tint-color; }
+.darken { background-color: $secondary-color; color: $blank-color;
+    a { color: #fff; }
+}
