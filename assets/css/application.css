@@ -764,108 +764,103 @@ main[role=main] .row {
 }
 
 /* line 92, ../_loom_compass/scss/loom/views/_wp-layout.scss */
-.right {
-  float: right;
-}
-
-/* line 96, ../_loom_compass/scss/loom/views/_wp-layout.scss */
 .bg-photo {
   color: white;
   background-color: #182033;
 }
 
-/* line 101, ../_loom_compass/scss/loom/views/_wp-layout.scss */
+/* line 97, ../_loom_compass/scss/loom/views/_wp-layout.scss */
 .bg-graphic {
   position: relative;
 }
 
-/* line 105, ../_loom_compass/scss/loom/views/_wp-layout.scss */
+/* line 101, ../_loom_compass/scss/loom/views/_wp-layout.scss */
 .p-centered {
   text-align: center;
 }
 @media only screen and (min-width: 54.85714em) {
-  /* line 105, ../_loom_compass/scss/loom/views/_wp-layout.scss */
+  /* line 101, ../_loom_compass/scss/loom/views/_wp-layout.scss */
   .p-centered {
     padding: 0 96px;
   }
 }
 
-/* line 112, ../_loom_compass/scss/loom/views/_wp-layout.scss */
+/* line 108, ../_loom_compass/scss/loom/views/_wp-layout.scss */
 .p-right {
   text-align: right;
 }
 
-/* line 116, ../_loom_compass/scss/loom/views/_wp-layout.scss */
+/* line 112, ../_loom_compass/scss/loom/views/_wp-layout.scss */
 img {
   display: block;
 }
 
-/* line 121, ../_loom_compass/scss/loom/views/_wp-layout.scss */
+/* line 117, ../_loom_compass/scss/loom/views/_wp-layout.scss */
 #skyline {
   width: 100%;
   text-align: center;
   bottom: 0;
 }
-/* line 127, ../_loom_compass/scss/loom/views/_wp-layout.scss */
+/* line 123, ../_loom_compass/scss/loom/views/_wp-layout.scss */
 #skyline img {
   margin: 0 auto;
 }
 
-/* line 130, ../_loom_compass/scss/loom/views/_wp-layout.scss */
+/* line 126, ../_loom_compass/scss/loom/views/_wp-layout.scss */
 .partners h3 {
   text-align: center;
 }
 
-/* line 136, ../_loom_compass/scss/loom/views/_wp-layout.scss */
+/* line 132, ../_loom_compass/scss/loom/views/_wp-layout.scss */
 .footer-sponsor-group img {
   margin: 0 auto;
 }
 
-/* line 141, ../_loom_compass/scss/loom/views/_wp-layout.scss */
+/* line 137, ../_loom_compass/scss/loom/views/_wp-layout.scss */
 .copyright, .site-by {
   font-size: 0.85714rem;
 }
 
-/* line 146, ../_loom_compass/scss/loom/views/_wp-layout.scss */
+/* line 142, ../_loom_compass/scss/loom/views/_wp-layout.scss */
 .site-by {
   clear: both;
   display: block;
   text-align: center;
 }
 
-/* line 154, ../_loom_compass/scss/loom/views/_wp-layout.scss */
+/* line 150, ../_loom_compass/scss/loom/views/_wp-layout.scss */
 .session {
   padding-top: 1.71429rem;
   padding-bottom: 1.71429rem;
 }
 @media only screen and (min-width: 54.85714em) {
-  /* line 154, ../_loom_compass/scss/loom/views/_wp-layout.scss */
+  /* line 150, ../_loom_compass/scss/loom/views/_wp-layout.scss */
   .session {
     padding-top: 1.75rem;
     padding-bottom: 1.75rem;
   }
 }
 @media only screen and (min-width: 85.71429em) {
-  /* line 154, ../_loom_compass/scss/loom/views/_wp-layout.scss */
+  /* line 150, ../_loom_compass/scss/loom/views/_wp-layout.scss */
   .session {
     padding-top: 1.66667rem;
     padding-bottom: 1.66667rem;
   }
 }
 
-/* line 169, ../_loom_compass/scss/loom/views/_wp-layout.scss */
+/* line 165, ../_loom_compass/scss/loom/views/_wp-layout.scss */
 ol.event-agenda {
   list-style-type: none;
 }
 
-/* line 173, ../_loom_compass/scss/loom/views/_wp-layout.scss */
+/* line 169, ../_loom_compass/scss/loom/views/_wp-layout.scss */
 .session {
   overflow: hidden;
   padding-left: .5em;
   padding-right: .5em;
 }
 
-/* line 180, ../_loom_compass/scss/loom/views/_wp-layout.scss */
+/* line 176, ../_loom_compass/scss/loom/views/_wp-layout.scss */
 ol.event-agenda .session:nth-child(even) {
   background-color: rgba(0, 0, 0, 0.05);
 }
