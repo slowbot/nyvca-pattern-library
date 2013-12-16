@@ -1,20 +1,23 @@
 .control {
   .row {
+    position: relative;
     padding-left: 0;
     padding-right: 0;
    
     @include breakpoint( medium ) {
       width: 100%;
-      padding: $row-padding; 
+      padding: $row-padding $row-padding * 4; 
     }
   } 
 }
 
 .logo {
   position: absolute;
-  top: 0;
-  left: 0;
-  z-index: -1;
+  top: $row-padding;
+  left: $row-padding;
   width: 330px;
-  min-height: 50px;
+  
+  @include breakpoint( medium ) {
+    left: $row-padding * 4;
+  }
 }

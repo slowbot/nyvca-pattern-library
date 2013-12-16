@@ -26,7 +26,7 @@ a.menu-link {
 		}
 		nav[role=navigation] li a {
 			display: block;
-			padding: 0.8em;
+			padding: .8em $row-padding;
 			border-bottom: 1px solid #808080;
 		}
 		
@@ -48,5 +48,6 @@ a.menu-link {
 			}
 			nav[role=navigation] li a {
 				border: 0;
+				padding: .4em 1em;
 			}
 		}

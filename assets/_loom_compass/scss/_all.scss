@@ -10,14 +10,14 @@
 /* Globals */
 @import "loom/global/all";
 
+/* Grid Import */
+@import "loom/layout/grid";
+
 /* Navigation */
 @import "loom/layout/navigation";
 
 /* Helpers */
 @import "loom/global/helpers";
-
-/* Grid Import */
-@import "loom/layout/grid";
 
 /* Modules */
 @import "loom/modules/all";
