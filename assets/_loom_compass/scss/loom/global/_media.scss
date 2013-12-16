@@ -1,4 +1,5 @@
 img, video, object {
+display: block;
 max-width: 100%;
 height: auto;
 }
@@ -12,5 +13,42 @@ height: auto;
   
   @include breakpoint( large ) {
     height: 28em;
+  }
+}
+
+.caption-overlay {
+  position: relative;
+  
+  figcaption {
+  text-align: left;
+  padding: $base-rhythm-unit * 1;
+  
+  @include breakpoint( medium ) {
+    color: #fff;
+    
+    position: absolute;
+    top: 30%;
+    padding: 0 $base-rhythm-unit * 2;
+  }
+  
+  @include breakpoint( desktop ) {
+    top: 40%;
+    padding: 0 $base-rhythm-unit * 3;
+  }
+  
+  &.right {
+    right: 0;
+  }
+  
+  }
+}  
+
+.center {
+  float: none;
+  margin: 0 auto;
+  max-width: emCalc(1200px);
+
+  img {
+    margin: 0 auto;
   }
 }

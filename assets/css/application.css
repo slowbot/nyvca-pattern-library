@@ -13,6 +13,7 @@
   left: 0;
   z-index: -1;
   width: 330px;
+  min-height: 50px;
 }
 
 /* Globals */
@@ -242,25 +243,67 @@ nav li,
 /* Media */
 /* line 1, ../_loom_compass/scss/loom/global/_media.scss */
 img, video, object {
+  display: block;
   max-width: 100%;
   height: auto;
 }
 
-/* line 6, ../_loom_compass/scss/loom/global/_media.scss */
+/* line 7, ../_loom_compass/scss/loom/global/_media.scss */
 .squeeze-figure {
   overflow: hidden;
 }
 @media only screen and (min-width: 54.85714em) {
-  /* line 6, ../_loom_compass/scss/loom/global/_media.scss */
+  /* line 7, ../_loom_compass/scss/loom/global/_media.scss */
   .squeeze-figure {
     height: 22em;
   }
 }
 @media only screen and (min-width: 85.71429em) {
-  /* line 6, ../_loom_compass/scss/loom/global/_media.scss */
+  /* line 7, ../_loom_compass/scss/loom/global/_media.scss */
   .squeeze-figure {
     height: 28em;
   }
+}
+
+/* line 19, ../_loom_compass/scss/loom/global/_media.scss */
+.caption-overlay {
+  position: relative;
+}
+/* line 22, ../_loom_compass/scss/loom/global/_media.scss */
+.caption-overlay figcaption {
+  text-align: left;
+  padding: 1.71429rem;
+}
+@media only screen and (min-width: 54.85714em) {
+  /* line 22, ../_loom_compass/scss/loom/global/_media.scss */
+  .caption-overlay figcaption {
+    color: #fff;
+    position: absolute;
+    top: 30%;
+    padding: 0 3.42857rem;
+  }
+}
+@media only screen and (min-width: 68.57143em) {
+  /* line 22, ../_loom_compass/scss/loom/global/_media.scss */
+  .caption-overlay figcaption {
+    top: 40%;
+    padding: 0 5.14286rem;
+  }
+}
+/* line 39, ../_loom_compass/scss/loom/global/_media.scss */
+.caption-overlay figcaption.right {
+  right: 0;
+}
+
+/* line 46, ../_loom_compass/scss/loom/global/_media.scss */
+.center {
+  float: none;
+  margin: 0 auto;
+  max-width: 85.71429em;
+}
+/* line 51, ../_loom_compass/scss/loom/global/_media.scss */
+.center img {
+  margin: 0 auto;
 }
 
 /* Theme */
