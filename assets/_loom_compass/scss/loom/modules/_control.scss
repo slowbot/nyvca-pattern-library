@@ -1,3 +1,14 @@
+.control {
+  .row {
+    padding-left: 0;
+    padding-right: 0;
+   
+    @include breakpoint( medium ) {
+      width: 100%;
+      padding: $row-padding; 
+    }
+  } 
+
 .logo {
   position: absolute;
   top: 0;
