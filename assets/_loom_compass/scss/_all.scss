@@ -7,9 +7,6 @@
 // =Mixins
 @import "loom/mixins/all";
 
-/* Modules */
-@import "loom/modules/all";
-
 /* Globals */
 @import "loom/global/all";
 
@@ -21,6 +18,9 @@
 
 /* Grid Import */
 @import "loom/layout/grid";
+
+/* Modules */
+@import "loom/modules/all";
 
 /* WP Import */
 @import "loom/views/all";

@@ -1,161 +1,879 @@
-/*
-Syntax error: Undefined variable: "$row-padding".
-        on line 8 of /Users/bionic/Sites/nyvca-pattern-library/assets/_loom_compass/scss/loom/modules/_control.scss, in `@content'
-        from line 19 of /Users/bionic/Sites/nyvca-pattern-library/assets/_loom_compass/scss/loom/mixins/_breakpoints.scss, in `breakpoint'
-        from line 6 of /Users/bionic/Sites/nyvca-pattern-library/assets/_loom_compass/scss/loom/modules/_control.scss
-        from line 3 of /Users/bionic/Sites/nyvca-pattern-library/assets/_loom_compass/scss/loom/modules/_all.scss
-        from line 11 of /Users/bionic/Sites/nyvca-pattern-library/assets/_loom_compass/scss/_all.scss
-        from line 4 of /Users/bionic/Sites/nyvca-pattern-library/assets/_loom_compass/scss/application.scss
+/* Import global assets for all apps */
+/* Compass CSS3 Library */
+/* Variables */
+/* Breakpoints */
+/* Font Smoothing */
+/* Text Size Adjust */
+/* Globals */
+/* Reset */
+/* Reset */
+/* Add HTML5 elements */
+/* Defaults */
+/* Reset */
+/* line 18, ../_loom_compass/scss/loom/global/_reset.scss */
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code,
+del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var,
+b, i,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, figure, footer, header,
+hgroup, menu, nav, section, menu,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  vertical-align: baseline;
+  background: transparent;
+}
 
-Backtrace:
-/Users/bionic/Sites/nyvca-pattern-library/assets/_loom_compass/scss/loom/modules/_control.scss:8:in `@content'
-/Users/bionic/Sites/nyvca-pattern-library/assets/_loom_compass/scss/loom/mixins/_breakpoints.scss:19:in `breakpoint'
-/Users/bionic/Sites/nyvca-pattern-library/assets/_loom_compass/scss/loom/modules/_control.scss:6
-/Users/bionic/Sites/nyvca-pattern-library/assets/_loom_compass/scss/loom/modules/_all.scss:3
-/Users/bionic/Sites/nyvca-pattern-library/assets/_loom_compass/scss/_all.scss:11
-/Users/bionic/Sites/nyvca-pattern-library/assets/_loom_compass/scss/application.scss:4
-/Users/bionic/.rvm/rubies/ruby-2.0.0-p195/lib/ruby/gems/2.0.0/gems/sass-3.2.12/lib/sass/script/variable.rb:49:in `_perform'
-/Users/bionic/.rvm/rubies/ruby-2.0.0-p195/lib/ruby/gems/2.0.0/gems/sass-3.2.12/lib/sass/script/node.rb:40:in `perform'
-/Users/bionic/.rvm/rubies/ruby-2.0.0-p195/lib/ruby/gems/2.0.0/gems/sass-3.2.12/lib/sass/tree/visitors/perform.rb:298:in `visit_prop'
-/Users/bionic/.rvm/rubies/ruby-2.0.0-p195/lib/ruby/gems/2.0.0/gems/sass-3.2.12/lib/sass/tree/visitors/base.rb:37:in `visit'
-/Users/bionic/.rvm/rubies/ruby-2.0.0-p195/lib/ruby/gems/2.0.0/gems/sass-3.2.12/lib/sass/tree/visitors/perform.rb:100:in `visit'
-/Users/bionic/.rvm/rubies/ruby-2.0.0-p195/lib/ruby/gems/2.0.0/gems/sass-3.2.12/lib/sass/tree/visitors/perform.rb:285:in `block (2 levels) in visit_content'
-/Users/bionic/.rvm/rubies/ruby-2.0.0-p195/lib/ruby/gems/2.0.0/gems/sass-3.2.12/lib/sass/tree/visitors/perform.rb:285:in `map'
-/Users/bionic/.rvm/rubies/ruby-2.0.0-p195/lib/ruby/gems/2.0.0/gems/sass-3.2.12/lib/sass/tree/visitors/perform.rb:285:in `block in visit_content'
-/Users/bionic/.rvm/rubies/ruby-2.0.0-p195/lib/ruby/gems/2.0.0/gems/sass-3.2.12/lib/sass/tree/visitors/perform.rb:121:in `with_environment'
-/Users/bionic/.rvm/rubies/ruby-2.0.0-p195/lib/ruby/gems/2.0.0/gems/sass-3.2.12/lib/sass/tree/visitors/perform.rb:285:in `visit_content'
-/Users/bionic/.rvm/rubies/ruby-2.0.0-p195/lib/ruby/gems/2.0.0/gems/sass-3.2.12/lib/sass/tree/visitors/base.rb:37:in `visit'
-/Users/bionic/.rvm/rubies/ruby-2.0.0-p195/lib/ruby/gems/2.0.0/gems/sass-3.2.12/lib/sass/tree/visitors/perform.rb:100:in `visit'
-/Users/bionic/.rvm/rubies/ruby-2.0.0-p195/lib/ruby/gems/2.0.0/gems/sass-3.2.12/lib/sass/tree/visitors/base.rb:53:in `block in visit_children'
-/Users/bionic/.rvm/rubies/ruby-2.0.0-p195/lib/ruby/gems/2.0.0/gems/sass-3.2.12/lib/sass/tree/visitors/base.rb:53:in `map'
-/Users/bionic/.rvm/rubies/ruby-2.0.0-p195/lib/ruby/gems/2.0.0/gems/sass-3.2.12/lib/sass/tree/visitors/base.rb:53:in `visit_children'
-/Users/bionic/.rvm/rubies/ruby-2.0.0-p195/lib/ruby/gems/2.0.0/gems/sass-3.2.12/lib/sass/tree/visitors/perform.rb:109:in `block in visit_children'
-/Users/bionic/.rvm/rubies/ruby-2.0.0-p195/lib/ruby/gems/2.0.0/gems/sass-3.2.12/lib/sass/tree/visitors/perform.rb:121:in `with_environment'
-/Users/bionic/.rvm/rubies/ruby-2.0.0-p195/lib/ruby/gems/2.0.0/gems/sass-3.2.12/lib/sass/tree/visitors/perform.rb:108:in `visit_children'
-/Users/bionic/.rvm/rubies/ruby-2.0.0-p195/lib/ruby/gems/2.0.0/gems/sass-3.2.12/lib/sass/tree/visitors/base.rb:37:in `block in visit'
-/Users/bionic/.rvm/rubies/ruby-2.0.0-p195/lib/ruby/gems/2.0.0/gems/sass-3.2.12/lib/sass/tree/visitors/perform.rb:362:in `visit_media'
-/Users/bionic/.rvm/rubies/ruby-2.0.0-p195/lib/ruby/gems/2.0.0/gems/sass-3.2.12/lib/sass/tree/visitors/base.rb:37:in `visit'
-/Users/bionic/.rvm/rubies/ruby-2.0.0-p195/lib/ruby/gems/2.0.0/gems/sass-3.2.12/lib/sass/tree/visitors/perform.rb:100:in `visit'
-/Users/bionic/.rvm/rubies/ruby-2.0.0-p195/lib/ruby/gems/2.0.0/gems/sass-3.2.12/lib/sass/tree/visitors/base.rb:53:in `block in visit_children'
-/Users/bionic/.rvm/rubies/ruby-2.0.0-p195/lib/ruby/gems/2.0.0/gems/sass-3.2.12/lib/sass/tree/visitors/base.rb:53:in `map'
-/Users/bionic/.rvm/rubies/ruby-2.0.0-p195/lib/ruby/gems/2.0.0/gems/sass-3.2.12/lib/sass/tree/visitors/base.rb:53:in `visit_children'
-/Users/bionic/.rvm/rubies/ruby-2.0.0-p195/lib/ruby/gems/2.0.0/gems/sass-3.2.12/lib/sass/tree/visitors/perform.rb:109:in `block in visit_children'
-/Users/bionic/.rvm/rubies/ruby-2.0.0-p195/lib/ruby/gems/2.0.0/gems/sass-3.2.12/lib/sass/tree/visitors/perform.rb:121:in `with_environment'
-/Users/bionic/.rvm/rubies/ruby-2.0.0-p195/lib/ruby/gems/2.0.0/gems/sass-3.2.12/lib/sass/tree/visitors/perform.rb:108:in `visit_children'
-/Users/bionic/.rvm/rubies/ruby-2.0.0-p195/lib/ruby/gems/2.0.0/gems/sass-3.2.12/lib/sass/tree/visitors/base.rb:37:in `block in visit'
-/Users/bionic/.rvm/rubies/ruby-2.0.0-p195/lib/ruby/gems/2.0.0/gems/sass-3.2.12/lib/sass/tree/visitors/perform.rb:205:in `visit_if'
-/Users/bionic/.rvm/rubies/ruby-2.0.0-p195/lib/ruby/gems/2.0.0/gems/sass-3.2.12/lib/sass/tree/visitors/base.rb:37:in `visit'
-/Users/bionic/.rvm/rubies/ruby-2.0.0-p195/lib/ruby/gems/2.0.0/gems/sass-3.2.12/lib/sass/tree/visitors/perform.rb:100:in `visit'
-/Users/bionic/.rvm/rubies/ruby-2.0.0-p195/lib/ruby/gems/2.0.0/gems/sass-3.2.12/lib/sass/tree/visitors/perform.rb:208:in `visit_if'
-/Users/bionic/.rvm/rubies/ruby-2.0.0-p195/lib/ruby/gems/2.0.0/gems/sass-3.2.12/lib/sass/tree/visitors/base.rb:37:in `visit'
-/Users/bionic/.rvm/rubies/ruby-2.0.0-p195/lib/ruby/gems/2.0.0/gems/sass-3.2.12/lib/sass/tree/visitors/perform.rb:100:in `visit'
-/Users/bionic/.rvm/rubies/ruby-2.0.0-p195/lib/ruby/gems/2.0.0/gems/sass-3.2.12/lib/sass/tree/visitors/base.rb:53:in `block in visit_children'
-/Users/bionic/.rvm/rubies/ruby-2.0.0-p195/lib/ruby/gems/2.0.0/gems/sass-3.2.12/lib/sass/tree/visitors/base.rb:53:in `map'
-/Users/bionic/.rvm/rubies/ruby-2.0.0-p195/lib/ruby/gems/2.0.0/gems/sass-3.2.12/lib/sass/tree/visitors/base.rb:53:in `visit_children'
-/Users/bionic/.rvm/rubies/ruby-2.0.0-p195/lib/ruby/gems/2.0.0/gems/sass-3.2.12/lib/sass/tree/visitors/perform.rb:109:in `block in visit_children'
-/Users/bionic/.rvm/rubies/ruby-2.0.0-p195/lib/ruby/gems/2.0.0/gems/sass-3.2.12/lib/sass/tree/visitors/perform.rb:121:in `with_environment'
-/Users/bionic/.rvm/rubies/ruby-2.0.0-p195/lib/ruby/gems/2.0.0/gems/sass-3.2.12/lib/sass/tree/visitors/perform.rb:108:in `visit_children'
-/Users/bionic/.rvm/rubies/ruby-2.0.0-p195/lib/ruby/gems/2.0.0/gems/sass-3.2.12/lib/sass/tree/visitors/base.rb:37:in `block in visit'
-/Users/bionic/.rvm/rubies/ruby-2.0.0-p195/lib/ruby/gems/2.0.0/gems/sass-3.2.12/lib/sass/tree/visitors/perform.rb:205:in `visit_if'
-/Users/bionic/.rvm/rubies/ruby-2.0.0-p195/lib/ruby/gems/2.0.0/gems/sass-3.2.12/lib/sass/tree/visitors/base.rb:37:in `visit'
-/Users/bionic/.rvm/rubies/ruby-2.0.0-p195/lib/ruby/gems/2.0.0/gems/sass-3.2.12/lib/sass/tree/visitors/perform.rb:100:in `visit'
-/Users/bionic/.rvm/rubies/ruby-2.0.0-p195/lib/ruby/gems/2.0.0/gems/sass-3.2.12/lib/sass/tree/visitors/perform.rb:268:in `block (3 levels) in visit_mixin'
-/Users/bionic/.rvm/rubies/ruby-2.0.0-p195/lib/ruby/gems/2.0.0/gems/sass-3.2.12/lib/sass/tree/visitors/perform.rb:268:in `map'
-/Users/bionic/.rvm/rubies/ruby-2.0.0-p195/lib/ruby/gems/2.0.0/gems/sass-3.2.12/lib/sass/tree/visitors/perform.rb:268:in `block (2 levels) in visit_mixin'
-/Users/bionic/.rvm/rubies/ruby-2.0.0-p195/lib/ruby/gems/2.0.0/gems/sass-3.2.12/lib/sass/tree/visitors/perform.rb:121:in `with_environment'
-/Users/bionic/.rvm/rubies/ruby-2.0.0-p195/lib/ruby/gems/2.0.0/gems/sass-3.2.12/lib/sass/tree/visitors/perform.rb:268:in `block in visit_mixin'
-/Users/bionic/.rvm/rubies/ruby-2.0.0-p195/lib/ruby/gems/2.0.0/gems/sass-3.2.12/lib/sass/tree/visitors/perform.rb:70:in `perform_arguments'
-/Users/bionic/.rvm/rubies/ruby-2.0.0-p195/lib/ruby/gems/2.0.0/gems/sass-3.2.12/lib/sass/tree/visitors/perform.rb:263:in `visit_mixin'
-/Users/bionic/.rvm/rubies/ruby-2.0.0-p195/lib/ruby/gems/2.0.0/gems/sass-3.2.12/lib/sass/tree/visitors/base.rb:37:in `visit'
-/Users/bionic/.rvm/rubies/ruby-2.0.0-p195/lib/ruby/gems/2.0.0/gems/sass-3.2.12/lib/sass/tree/visitors/perform.rb:100:in `visit'
-/Users/bionic/.rvm/rubies/ruby-2.0.0-p195/lib/ruby/gems/2.0.0/gems/sass-3.2.12/lib/sass/tree/visitors/base.rb:53:in `block in visit_children'
-/Users/bionic/.rvm/rubies/ruby-2.0.0-p195/lib/ruby/gems/2.0.0/gems/sass-3.2.12/lib/sass/tree/visitors/base.rb:53:in `map'
-/Users/bionic/.rvm/rubies/ruby-2.0.0-p195/lib/ruby/gems/2.0.0/gems/sass-3.2.12/lib/sass/tree/visitors/base.rb:53:in `visit_children'
-/Users/bionic/.rvm/rubies/ruby-2.0.0-p195/lib/ruby/gems/2.0.0/gems/sass-3.2.12/lib/sass/tree/visitors/perform.rb:109:in `block in visit_children'
-/Users/bionic/.rvm/rubies/ruby-2.0.0-p195/lib/ruby/gems/2.0.0/gems/sass-3.2.12/lib/sass/tree/visitors/perform.rb:121:in `with_environment'
-/Users/bionic/.rvm/rubies/ruby-2.0.0-p195/lib/ruby/gems/2.0.0/gems/sass-3.2.12/lib/sass/tree/visitors/perform.rb:108:in `visit_children'
-/Users/bionic/.rvm/rubies/ruby-2.0.0-p195/lib/ruby/gems/2.0.0/gems/sass-3.2.12/lib/sass/tree/visitors/base.rb:37:in `block in visit'
-/Users/bionic/.rvm/rubies/ruby-2.0.0-p195/lib/ruby/gems/2.0.0/gems/sass-3.2.12/lib/sass/tree/visitors/perform.rb:320:in `visit_rule'
-/Users/bionic/.rvm/rubies/ruby-2.0.0-p195/lib/ruby/gems/2.0.0/gems/sass-3.2.12/lib/sass/tree/visitors/base.rb:37:in `visit'
-/Users/bionic/.rvm/rubies/ruby-2.0.0-p195/lib/ruby/gems/2.0.0/gems/sass-3.2.12/lib/sass/tree/visitors/perform.rb:100:in `visit'
-/Users/bionic/.rvm/rubies/ruby-2.0.0-p195/lib/ruby/gems/2.0.0/gems/sass-3.2.12/lib/sass/tree/visitors/base.rb:53:in `block in visit_children'
-/Users/bionic/.rvm/rubies/ruby-2.0.0-p195/lib/ruby/gems/2.0.0/gems/sass-3.2.12/lib/sass/tree/visitors/base.rb:53:in `map'
-/Users/bionic/.rvm/rubies/ruby-2.0.0-p195/lib/ruby/gems/2.0.0/gems/sass-3.2.12/lib/sass/tree/visitors/base.rb:53:in `visit_children'
-/Users/bionic/.rvm/rubies/ruby-2.0.0-p195/lib/ruby/gems/2.0.0/gems/sass-3.2.12/lib/sass/tree/visitors/perform.rb:109:in `block in visit_children'
-/Users/bionic/.rvm/rubies/ruby-2.0.0-p195/lib/ruby/gems/2.0.0/gems/sass-3.2.12/lib/sass/tree/visitors/perform.rb:121:in `with_environment'
-/Users/bionic/.rvm/rubies/ruby-2.0.0-p195/lib/ruby/gems/2.0.0/gems/sass-3.2.12/lib/sass/tree/visitors/perform.rb:108:in `visit_children'
-/Users/bionic/.rvm/rubies/ruby-2.0.0-p195/lib/ruby/gems/2.0.0/gems/sass-3.2.12/lib/sass/tree/visitors/base.rb:37:in `block in visit'
-/Users/bionic/.rvm/rubies/ruby-2.0.0-p195/lib/ruby/gems/2.0.0/gems/sass-3.2.12/lib/sass/tree/visitors/perform.rb:320:in `visit_rule'
-/Users/bionic/.rvm/rubies/ruby-2.0.0-p195/lib/ruby/gems/2.0.0/gems/sass-3.2.12/lib/sass/tree/visitors/base.rb:37:in `visit'
-/Users/bionic/.rvm/rubies/ruby-2.0.0-p195/lib/ruby/gems/2.0.0/gems/sass-3.2.12/lib/sass/tree/visitors/perform.rb:100:in `visit'
-/Users/bionic/.rvm/rubies/ruby-2.0.0-p195/lib/ruby/gems/2.0.0/gems/sass-3.2.12/lib/sass/tree/visitors/perform.rb:227:in `block in visit_import'
-/Users/bionic/.rvm/rubies/ruby-2.0.0-p195/lib/ruby/gems/2.0.0/gems/sass-3.2.12/lib/sass/tree/visitors/perform.rb:227:in `map'
-/Users/bionic/.rvm/rubies/ruby-2.0.0-p195/lib/ruby/gems/2.0.0/gems/sass-3.2.12/lib/sass/tree/visitors/perform.rb:227:in `visit_import'
-/Users/bionic/.rvm/rubies/ruby-2.0.0-p195/lib/ruby/gems/2.0.0/gems/sass-3.2.12/lib/sass/tree/visitors/base.rb:37:in `visit'
-/Users/bionic/.rvm/rubies/ruby-2.0.0-p195/lib/ruby/gems/2.0.0/gems/sass-3.2.12/lib/sass/tree/visitors/perform.rb:100:in `visit'
-/Users/bionic/.rvm/rubies/ruby-2.0.0-p195/lib/ruby/gems/2.0.0/gems/sass-3.2.12/lib/sass/tree/visitors/perform.rb:227:in `block in visit_import'
-/Users/bionic/.rvm/rubies/ruby-2.0.0-p195/lib/ruby/gems/2.0.0/gems/sass-3.2.12/lib/sass/tree/visitors/perform.rb:227:in `map'
-/Users/bionic/.rvm/rubies/ruby-2.0.0-p195/lib/ruby/gems/2.0.0/gems/sass-3.2.12/lib/sass/tree/visitors/perform.rb:227:in `visit_import'
-/Users/bionic/.rvm/rubies/ruby-2.0.0-p195/lib/ruby/gems/2.0.0/gems/sass-3.2.12/lib/sass/tree/visitors/base.rb:37:in `visit'
-/Users/bionic/.rvm/rubies/ruby-2.0.0-p195/lib/ruby/gems/2.0.0/gems/sass-3.2.12/lib/sass/tree/visitors/perform.rb:100:in `visit'
-/Users/bionic/.rvm/rubies/ruby-2.0.0-p195/lib/ruby/gems/2.0.0/gems/sass-3.2.12/lib/sass/tree/visitors/perform.rb:227:in `block in visit_import'
-/Users/bionic/.rvm/rubies/ruby-2.0.0-p195/lib/ruby/gems/2.0.0/gems/sass-3.2.12/lib/sass/tree/visitors/perform.rb:227:in `map'
-/Users/bionic/.rvm/rubies/ruby-2.0.0-p195/lib/ruby/gems/2.0.0/gems/sass-3.2.12/lib/sass/tree/visitors/perform.rb:227:in `visit_import'
-/Users/bionic/.rvm/rubies/ruby-2.0.0-p195/lib/ruby/gems/2.0.0/gems/sass-3.2.12/lib/sass/tree/visitors/base.rb:37:in `visit'
-/Users/bionic/.rvm/rubies/ruby-2.0.0-p195/lib/ruby/gems/2.0.0/gems/sass-3.2.12/lib/sass/tree/visitors/perform.rb:100:in `visit'
-/Users/bionic/.rvm/rubies/ruby-2.0.0-p195/lib/ruby/gems/2.0.0/gems/sass-3.2.12/lib/sass/tree/visitors/base.rb:53:in `block in visit_children'
-/Users/bionic/.rvm/rubies/ruby-2.0.0-p195/lib/ruby/gems/2.0.0/gems/sass-3.2.12/lib/sass/tree/visitors/base.rb:53:in `map'
-/Users/bionic/.rvm/rubies/ruby-2.0.0-p195/lib/ruby/gems/2.0.0/gems/sass-3.2.12/lib/sass/tree/visitors/base.rb:53:in `visit_children'
-/Users/bionic/.rvm/rubies/ruby-2.0.0-p195/lib/ruby/gems/2.0.0/gems/sass-3.2.12/lib/sass/tree/visitors/perform.rb:109:in `block in visit_children'
-/Users/bionic/.rvm/rubies/ruby-2.0.0-p195/lib/ruby/gems/2.0.0/gems/sass-3.2.12/lib/sass/tree/visitors/perform.rb:121:in `with_environment'
-/Users/bionic/.rvm/rubies/ruby-2.0.0-p195/lib/ruby/gems/2.0.0/gems/sass-3.2.12/lib/sass/tree/visitors/perform.rb:108:in `visit_children'
-/Users/bionic/.rvm/rubies/ruby-2.0.0-p195/lib/ruby/gems/2.0.0/gems/sass-3.2.12/lib/sass/tree/visitors/base.rb:37:in `block in visit'
-/Users/bionic/.rvm/rubies/ruby-2.0.0-p195/lib/ruby/gems/2.0.0/gems/sass-3.2.12/lib/sass/tree/visitors/perform.rb:128:in `visit_root'
-/Users/bionic/.rvm/rubies/ruby-2.0.0-p195/lib/ruby/gems/2.0.0/gems/sass-3.2.12/lib/sass/tree/visitors/base.rb:37:in `visit'
-/Users/bionic/.rvm/rubies/ruby-2.0.0-p195/lib/ruby/gems/2.0.0/gems/sass-3.2.12/lib/sass/tree/visitors/perform.rb:100:in `visit'
-/Users/bionic/.rvm/rubies/ruby-2.0.0-p195/lib/ruby/gems/2.0.0/gems/sass-3.2.12/lib/sass/tree/visitors/perform.rb:7:in `visit'
-/Users/bionic/.rvm/rubies/ruby-2.0.0-p195/lib/ruby/gems/2.0.0/gems/sass-3.2.12/lib/sass/tree/root_node.rb:20:in `render'
-/Users/bionic/.rvm/rubies/ruby-2.0.0-p195/lib/ruby/gems/2.0.0/gems/sass-3.2.12/lib/sass/engine.rb:315:in `_render'
-/Users/bionic/.rvm/rubies/ruby-2.0.0-p195/lib/ruby/gems/2.0.0/gems/sass-3.2.12/lib/sass/engine.rb:262:in `render'
-/Users/bionic/.rvm/rubies/ruby-2.0.0-p195/lib/ruby/gems/2.0.0/gems/compass-0.12.2/lib/compass/compiler.rb:140:in `block (2 levels) in compile'
-/Users/bionic/.rvm/rubies/ruby-2.0.0-p195/lib/ruby/gems/2.0.0/gems/compass-0.12.2/lib/compass/compiler.rb:126:in `timed'
-/Users/bionic/.rvm/rubies/ruby-2.0.0-p195/lib/ruby/gems/2.0.0/gems/compass-0.12.2/lib/compass/compiler.rb:139:in `block in compile'
-/Users/bionic/.rvm/rubies/ruby-2.0.0-p195/lib/ruby/gems/2.0.0/gems/compass-0.12.2/lib/compass/logger.rb:45:in `red'
-/Users/bionic/.rvm/rubies/ruby-2.0.0-p195/lib/ruby/gems/2.0.0/gems/compass-0.12.2/lib/compass/compiler.rb:138:in `compile'
-/Users/bionic/.rvm/rubies/ruby-2.0.0-p195/lib/ruby/gems/2.0.0/gems/compass-0.12.2/lib/compass/compiler.rb:118:in `compile_if_required'
-/Users/bionic/.rvm/rubies/ruby-2.0.0-p195/lib/ruby/gems/2.0.0/gems/compass-0.12.2/lib/compass/compiler.rb:103:in `block (2 levels) in run'
-/Users/bionic/.rvm/rubies/ruby-2.0.0-p195/lib/ruby/gems/2.0.0/gems/compass-0.12.2/lib/compass/compiler.rb:101:in `each'
-/Users/bionic/.rvm/rubies/ruby-2.0.0-p195/lib/ruby/gems/2.0.0/gems/compass-0.12.2/lib/compass/compiler.rb:101:in `block in run'
-/Users/bionic/.rvm/rubies/ruby-2.0.0-p195/lib/ruby/gems/2.0.0/gems/compass-0.12.2/lib/compass/compiler.rb:126:in `timed'
-/Users/bionic/.rvm/rubies/ruby-2.0.0-p195/lib/ruby/gems/2.0.0/gems/compass-0.12.2/lib/compass/compiler.rb:100:in `run'
-/Users/bionic/.rvm/rubies/ruby-2.0.0-p195/lib/ruby/gems/2.0.0/gems/compass-0.12.2/lib/compass/commands/watch_project.rb:147:in `recompile'
-/Users/bionic/.rvm/rubies/ruby-2.0.0-p195/lib/ruby/gems/2.0.0/gems/fssm-0.2.10/lib/fssm/path.rb:73:in `call'
-/Users/bionic/.rvm/rubies/ruby-2.0.0-p195/lib/ruby/gems/2.0.0/gems/fssm-0.2.10/lib/fssm/path.rb:73:in `run_callback'
-/Users/bionic/.rvm/rubies/ruby-2.0.0-p195/lib/ruby/gems/2.0.0/gems/fssm-0.2.10/lib/fssm/path.rb:55:in `callback_action'
-/Users/bionic/.rvm/rubies/ruby-2.0.0-p195/lib/ruby/gems/2.0.0/gems/fssm-0.2.10/lib/fssm/path.rb:35:in `update'
-/Users/bionic/.rvm/rubies/ruby-2.0.0-p195/lib/ruby/gems/2.0.0/gems/fssm-0.2.10/lib/fssm/state/directory.rb:39:in `block in modified'
-/Users/bionic/.rvm/rubies/ruby-2.0.0-p195/lib/ruby/gems/2.0.0/gems/fssm-0.2.10/lib/fssm/state/directory.rb:37:in `each'
-/Users/bionic/.rvm/rubies/ruby-2.0.0-p195/lib/ruby/gems/2.0.0/gems/fssm-0.2.10/lib/fssm/state/directory.rb:37:in `modified'
-/Users/bionic/.rvm/rubies/ruby-2.0.0-p195/lib/ruby/gems/2.0.0/gems/fssm-0.2.10/lib/fssm/state/directory.rb:18:in `refresh'
-/Users/bionic/.rvm/rubies/ruby-2.0.0-p195/lib/ruby/gems/2.0.0/gems/fssm-0.2.10/lib/fssm/backends/polling.rb:17:in `block (2 levels) in run'
-/Users/bionic/.rvm/rubies/ruby-2.0.0-p195/lib/ruby/gems/2.0.0/gems/fssm-0.2.10/lib/fssm/backends/polling.rb:17:in `each'
-/Users/bionic/.rvm/rubies/ruby-2.0.0-p195/lib/ruby/gems/2.0.0/gems/fssm-0.2.10/lib/fssm/backends/polling.rb:17:in `block in run'
-/Users/bionic/.rvm/rubies/ruby-2.0.0-p195/lib/ruby/gems/2.0.0/gems/fssm-0.2.10/lib/fssm/backends/polling.rb:15:in `loop'
-/Users/bionic/.rvm/rubies/ruby-2.0.0-p195/lib/ruby/gems/2.0.0/gems/fssm-0.2.10/lib/fssm/backends/polling.rb:15:in `run'
-/Users/bionic/.rvm/rubies/ruby-2.0.0-p195/lib/ruby/gems/2.0.0/gems/fssm-0.2.10/lib/fssm/monitor.rb:26:in `run'
-/Users/bionic/.rvm/rubies/ruby-2.0.0-p195/lib/ruby/gems/2.0.0/gems/fssm-0.2.10/lib/fssm.rb:70:in `monitor'
-/Users/bionic/.rvm/rubies/ruby-2.0.0-p195/lib/ruby/gems/2.0.0/gems/compass-0.12.2/lib/compass/commands/watch_project.rb:87:in `perform'
-/Users/bionic/.rvm/rubies/ruby-2.0.0-p195/lib/ruby/gems/2.0.0/gems/compass-0.12.2/lib/compass/commands/base.rb:18:in `execute'
-/Users/bionic/.rvm/rubies/ruby-2.0.0-p195/lib/ruby/gems/2.0.0/gems/compass-0.12.2/lib/compass/commands/project_base.rb:19:in `execute'
-/Users/bionic/.rvm/rubies/ruby-2.0.0-p195/lib/ruby/gems/2.0.0/gems/compass-0.12.2/lib/compass/exec/sub_command_ui.rb:43:in `perform!'
-/Users/bionic/.rvm/rubies/ruby-2.0.0-p195/lib/ruby/gems/2.0.0/gems/compass-0.12.2/lib/compass/exec/sub_command_ui.rb:15:in `run!'
-/Users/bionic/.rvm/rubies/ruby-2.0.0-p195/lib/ruby/gems/2.0.0/gems/compass-0.12.2/bin/compass:30:in `block in <top (required)>'
-/Users/bionic/.rvm/rubies/ruby-2.0.0-p195/lib/ruby/gems/2.0.0/gems/compass-0.12.2/bin/compass:44:in `call'
-/Users/bionic/.rvm/rubies/ruby-2.0.0-p195/lib/ruby/gems/2.0.0/gems/compass-0.12.2/bin/compass:44:in `<top (required)>'
-/Users/bionic/.rvm/gems/ruby-2.0.0-p195/bin/compass:19:in `load'
-/Users/bionic/.rvm/gems/ruby-2.0.0-p195/bin/compass:19:in `<main>'
-*/
-body:before {
-  white-space: pre;
-  font-family: monospace;
-  content: "Syntax error: Undefined variable: \"$row-padding\".\A         on line 8 of /Users/bionic/Sites/nyvca-pattern-library/assets/_loom_compass/scss/loom/modules/_control.scss, in `@content'\A         from line 19 of /Users/bionic/Sites/nyvca-pattern-library/assets/_loom_compass/scss/loom/mixins/_breakpoints.scss, in `breakpoint'\A         from line 6 of /Users/bionic/Sites/nyvca-pattern-library/assets/_loom_compass/scss/loom/modules/_control.scss\A         from line 3 of /Users/bionic/Sites/nyvca-pattern-library/assets/_loom_compass/scss/loom/modules/_all.scss\A         from line 11 of /Users/bionic/Sites/nyvca-pattern-library/assets/_loom_compass/scss/_all.scss\A         from line 4 of /Users/bionic/Sites/nyvca-pattern-library/assets/_loom_compass/scss/application.scss"; }
+/* Elements */
+/* Add HTML5 elements */
+/* line 41, ../_loom_compass/scss/loom/global/_reset.scss */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+nav,
+section,
+summary {
+  display: block;
+}
+
+/* Defaults */
+/* line 53, ../_loom_compass/scss/loom/global/_reset.scss */
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+select,
+textarea {
+  text-decoration: none;
+}
+
+/* line 57, ../_loom_compass/scss/loom/global/_reset.scss */
+ul {
+  list-style: none;
+}
+
+/* line 60, ../_loom_compass/scss/loom/global/_reset.scss */
+blockquote, q {
+  quotes: none;
+}
+
+/* line 65, ../_loom_compass/scss/loom/global/_reset.scss */
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+
+/* line 70, ../_loom_compass/scss/loom/global/_reset.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* Typography */
+/* line 45, ../_loom_compass/scss/loom/global/_typography.scss */
+.ExcelsiorLT {
+  font-family: ExcelsiorLT;
+}
+
+/* line 63, ../_loom_compass/scss/loom/global/_typography.scss */
+html {
+  font-size: 14px;
+  line-height: 24px;
+}
+@media only screen and (min-width: 54.85714em) {
+  /* line 63, ../_loom_compass/scss/loom/global/_typography.scss */
+  html {
+    font-size: 16px;
+    line-height: 28px;
+  }
+}
+@media only screen and (min-width: 85.71429em) {
+  /* line 63, ../_loom_compass/scss/loom/global/_typography.scss */
+  html {
+    font-size: 18px;
+    line-height: 30px;
+  }
+}
+
+/* line 78, ../_loom_compass/scss/loom/global/_typography.scss */
+html {
+  font-family: "Gotham SSm A", "Gotham SSm B", "HelveticaNeueLight", "HelveticaNeue-Light", "Helvetica Neue Light", "HelveticaNeueLight", "HelveticaNeue-Light", "Helvetica Neue Light", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: 300;
+}
+
+/* line 85, ../_loom_compass/scss/loom/global/_typography.scss */
+h1,
+.alpha, h2,
+.beta, h3,
+.gamma, h4,
+.delta, h5,
+.epsilon, h6,
+.zeta {
+  text-rendering: optimizeLegibility;
+  display: block;
+  font-weight: 300;
+}
+
+/* line 92, ../_loom_compass/scss/loom/global/_typography.scss */
+h1,
+.alpha, h2,
+.beta, h3,
+.gamma, h4,
+.delta, h5,
+.epsilon, h6,
+.zeta, p, #header .logo, .footer-sponsor-group, .copyright, .site-by {
+  margin-bottom: 1.71429rem;
+}
+@media only screen and (min-width: 54.85714em) {
+  /* line 92, ../_loom_compass/scss/loom/global/_typography.scss */
+  h1,
+  .alpha, h2,
+  .beta, h3,
+  .gamma, h4,
+  .delta, h5,
+  .epsilon, h6,
+  .zeta, p, #header .logo, .footer-sponsor-group, .copyright, .site-by {
+    margin-bottom: 1.75rem;
+  }
+}
+@media only screen and (min-width: 85.71429em) {
+  /* line 92, ../_loom_compass/scss/loom/global/_typography.scss */
+  h1,
+  .alpha, h2,
+  .beta, h3,
+  .gamma, h4,
+  .delta, h5,
+  .epsilon, h6,
+  .zeta, p, #header .logo, .footer-sponsor-group, .copyright, .site-by {
+    margin-bottom: 1.66667rem;
+  }
+}
+
+/* line 106, ../_loom_compass/scss/loom/global/_typography.scss */
+h1,
+.alpha {
+  font-size: 3.71429rem;
+  line-height: 3.5rem;
+}
+
+/* line 114, ../_loom_compass/scss/loom/global/_typography.scss */
+h2,
+.beta {
+  font-size: 1.71429rem;
+}
+
+/* line 121, ../_loom_compass/scss/loom/global/_typography.scss */
+h3,
+.gamma {
+  font-size: 1.28571rem;
+}
+
+/* line 128, ../_loom_compass/scss/loom/global/_typography.scss */
+h4,
+.delta {
+  font-size: 1.14286rem;
+}
+
+/* line 135, ../_loom_compass/scss/loom/global/_typography.scss */
+h5,
+.epsilon {
+  font-size: 1rem;
+  line-height: 2rem;
+}
+
+/* line 143, ../_loom_compass/scss/loom/global/_typography.scss */
+h6,
+.zeta {
+  font-size: 1.14286rem;
+  line-height: 1.57143rem;
+}
+
+/* line 150, ../_loom_compass/scss/loom/global/_typography.scss */
+p {
+  font-weight: 300;
+}
+
+/* line 155, ../_loom_compass/scss/loom/global/_typography.scss */
+a {
+  color: #de7c35;
+  text-decoration: none;
+}
+
+/* line 160, ../_loom_compass/scss/loom/global/_typography.scss */
+.serif {
+  font-family: "Sentinel SSm A", "Sentinel SSm B", Georgia, serif;
+}
+
+/* line 165, ../_loom_compass/scss/loom/global/_typography.scss */
+nav li,
+.sans {
+  font-family: "Gotham SSm A", "Gotham SSm B", "HelveticaNeueLight", "HelveticaNeue-Light", "Helvetica Neue Light", "HelveticaNeueLight", "HelveticaNeue-Light", "Helvetica Neue Light", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+/* Media */
+/* line 1, ../_loom_compass/scss/loom/global/_media.scss */
+img, video, object {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+/* line 7, ../_loom_compass/scss/loom/global/_media.scss */
+.squeeze-figure {
+  overflow: hidden;
+}
+@media only screen and (min-width: 54.85714em) {
+  /* line 7, ../_loom_compass/scss/loom/global/_media.scss */
+  .squeeze-figure {
+    height: 22em;
+  }
+}
+@media only screen and (min-width: 85.71429em) {
+  /* line 7, ../_loom_compass/scss/loom/global/_media.scss */
+  .squeeze-figure {
+    height: 28em;
+  }
+}
+
+/* line 19, ../_loom_compass/scss/loom/global/_media.scss */
+.caption-overlay {
+  position: relative;
+}
+/* line 22, ../_loom_compass/scss/loom/global/_media.scss */
+.caption-overlay figcaption {
+  text-align: left;
+  padding: 1.71429rem;
+}
+@media only screen and (min-width: 54.85714em) {
+  /* line 22, ../_loom_compass/scss/loom/global/_media.scss */
+  .caption-overlay figcaption {
+    color: #fff;
+    position: absolute;
+    top: 30%;
+    padding: 0 3.42857rem;
+  }
+}
+@media only screen and (min-width: 68.57143em) {
+  /* line 22, ../_loom_compass/scss/loom/global/_media.scss */
+  .caption-overlay figcaption {
+    top: 40%;
+    padding: 0 5.14286rem;
+  }
+}
+/* line 39, ../_loom_compass/scss/loom/global/_media.scss */
+.caption-overlay figcaption.right {
+  right: 0;
+}
+
+/* line 46, ../_loom_compass/scss/loom/global/_media.scss */
+.center {
+  float: none;
+  margin: 0 auto;
+  max-width: 85.71429em;
+}
+/* line 51, ../_loom_compass/scss/loom/global/_media.scss */
+.center img {
+  margin: 0 auto;
+}
+
+/* Theme */
+/* line 1, ../_loom_compass/scss/loom/global/_colors.scss */
+.underline {
+  padding-bottom: 0.5rem;
+  border-bottom: 2px solid #e9e9e9;
+}
+
+/* Color */
+/* line 6, ../_loom_compass/scss/loom/global/_colors.scss */
+.tinted {
+  background-color: #e9e9e9;
+}
+
+/* Helpers */
+@media only screen and (min-width: 54.85714em) {
+  /* line 2, ../_loom_compass/scss/loom/global/_helpers.scss */
+  .right {
+    float: right;
+  }
+}
+/* line 7, ../_loom_compass/scss/loom/global/_helpers.scss */
+.center {
+  text-align: center;
+}
+
+/* line 11, ../_loom_compass/scss/loom/global/_helpers.scss */
+.rythmn-up {
+  padding-top: 1.71429rem;
+}
+
+/* line 15, ../_loom_compass/scss/loom/global/_helpers.scss */
+footer {
+  display: block;
+}
+
+/* Navigation */
+/* line 1, ../_loom_compass/scss/loom/layout/_navigation.scss */
+a.menu-link {
+  float: right;
+  display: block;
+  padding: 1em;
+}
+
+/* line 7, ../_loom_compass/scss/loom/layout/_navigation.scss */
+nav[role=navigation] {
+  clear: both;
+  -webkit-transition: all 0.3s ease-out;
+  -moz-transition: all 0.3s ease-out;
+  -ms-transition: all 0.3s ease-out;
+  -o-transition: all 0.3s ease-out;
+  transition: all 0.3s ease-out;
+}
+
+/* line 15, ../_loom_compass/scss/loom/layout/_navigation.scss */
+.js nav[role=navigation] {
+  overflow: hidden;
+  max-height: 0;
+}
+
+/* line 19, ../_loom_compass/scss/loom/layout/_navigation.scss */
+nav[role=navigation].active {
+  max-height: 15em;
+}
+
+/* line 22, ../_loom_compass/scss/loom/layout/_navigation.scss */
+nav[role=navigation] ul {
+  margin: 0;
+  padding: 0;
+  border-top: 1px solid #808080;
+}
+
+/* line 27, ../_loom_compass/scss/loom/layout/_navigation.scss */
+nav[role=navigation] li a {
+  display: block;
+  padding: 0.8em;
+  border-bottom: 1px solid #808080;
+}
+
+@media only screen and (min-width: 54.85714em) {
+  /* line 34, ../_loom_compass/scss/loom/layout/_navigation.scss */
+  a.menu-link {
+    display: none;
+  }
+
+  /* line 37, ../_loom_compass/scss/loom/layout/_navigation.scss */
+  .js nav[role=navigation] {
+    max-height: none;
+  }
+
+  /* line 40, ../_loom_compass/scss/loom/layout/_navigation.scss */
+  nav[role=navigation] ul {
+    margin: 0 0 0 -0.25em;
+    border: 0;
+  }
+
+  /* line 45, ../_loom_compass/scss/loom/layout/_navigation.scss */
+  nav[role=navigation] li {
+    display: inline-block;
+    margin: 0 0.25em;
+  }
+
+  /* line 49, ../_loom_compass/scss/loom/layout/_navigation.scss */
+  nav[role=navigation] li a {
+    border: 0;
+  }
+}
+/* Helpers */
+@media only screen and (min-width: 54.85714em) {
+  /* line 2, ../_loom_compass/scss/loom/global/_helpers.scss */
+  .right {
+    float: right;
+  }
+}
+/* line 7, ../_loom_compass/scss/loom/global/_helpers.scss */
+.center {
+  text-align: center;
+}
+
+/* line 11, ../_loom_compass/scss/loom/global/_helpers.scss */
+.rythmn-up {
+  padding-top: 1.71429rem;
+}
+
+/* line 15, ../_loom_compass/scss/loom/global/_helpers.scss */
+footer {
+  display: block;
+}
+
+/* Grid Import */
+/* line 19, ../_loom_compass/scss/loom/layout/_grid.scss */
+*,
+*:after,
+*:before {
+  margin: 0;
+  padding: 0;
+  /* Removes padding behaviour on widths */
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+/* line 28, ../_loom_compass/scss/loom/layout/_grid.scss */
+.clear {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* line 36, ../_loom_compass/scss/loom/layout/_grid.scss */
+.full {
+  padding: 0;
+  max-width: 100%;
+}
+/* line 40, ../_loom_compass/scss/loom/layout/_grid.scss */
+.full:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* line 49, ../_loom_compass/scss/loom/layout/_grid.scss */
+.row,
+main[role=main] {
+  width: 100%;
+  padding: 24px;
+}
+/* line 53, ../_loom_compass/scss/loom/layout/_grid.scss */
+.row:after,
+main[role=main]:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+/* line 59, ../_loom_compass/scss/loom/layout/_grid.scss */
+.row.collapse,
+main[role=main].collapse {
+  padding: 0;
+}
+/* line 63, ../_loom_compass/scss/loom/layout/_grid.scss */
+.row.collapse-tall,
+main[role=main].collapse-tall {
+  padding: 0;
+}
+@media only screen and (min-width: 54.85714em) {
+  /* line 63, ../_loom_compass/scss/loom/layout/_grid.scss */
+  .row.collapse-tall,
+  main[role=main].collapse-tall {
+    padding: 0 96px;
+  }
+}
+@media only screen and (min-width: 54.85714em) {
+  /* line 49, ../_loom_compass/scss/loom/layout/_grid.scss */
+  .row,
+  main[role=main] {
+    max-width: 85.71429em;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 24px 96px;
+  }
+}
+/* line 77, ../_loom_compass/scss/loom/layout/_grid.scss */
+.row .row,
+main[role=main] .row {
+  margin-left: 0;
+  margin-right: 0;
+  padding: 0;
+}
+
+/* line 86, ../_loom_compass/scss/loom/layout/_grid.scss */
+.unit {
+  float: left;
+}
+/* line 87, ../_loom_compass/scss/loom/layout/_grid.scss */
+.unit.size1of1 {
+  float: none;
+}
+/* line 88, ../_loom_compass/scss/loom/layout/_grid.scss */
+.unit.size1of2 {
+  width: 50%;
+}
+/* line 89, ../_loom_compass/scss/loom/layout/_grid.scss */
+.unit.size1of3 {
+  width: 33.33333%;
+}
+/* line 90, ../_loom_compass/scss/loom/layout/_grid.scss */
+.unit.size2of3 {
+  width: 66.66666%;
+}
+/* line 91, ../_loom_compass/scss/loom/layout/_grid.scss */
+.unit.size1of4 {
+  width: 25%;
+}
+/* line 92, ../_loom_compass/scss/loom/layout/_grid.scss */
+.unit.size3of4 {
+  width: 75%;
+}
+/* line 93, ../_loom_compass/scss/loom/layout/_grid.scss */
+.unit.size1of5 {
+  width: 20%;
+}
+/* line 94, ../_loom_compass/scss/loom/layout/_grid.scss */
+.unit.size2of5 {
+  width: 40%;
+}
+/* line 95, ../_loom_compass/scss/loom/layout/_grid.scss */
+.unit.size3of5 {
+  width: 60%;
+}
+/* line 96, ../_loom_compass/scss/loom/layout/_grid.scss */
+.unit.size4of5 {
+  width: 80%;
+}
+
+/* line 99, ../_loom_compass/scss/loom/layout/_grid.scss */
+.unit-right {
+  float: right;
+}
+
+/* line 104, ../_loom_compass/scss/loom/layout/_grid.scss */
+.column {
+  padding-right: 0;
+  padding-bottom: 24px;
+}
+@media only screen and (min-width: 54.85714em) {
+  /* line 104, ../_loom_compass/scss/loom/layout/_grid.scss */
+  .column {
+    float: left;
+    padding-bottom: 0;
+    padding-right: 24px;
+  }
+  /* line 114, ../_loom_compass/scss/loom/layout/_grid.scss */
+  .column.size1of1 {
+    float: none;
+  }
+  /* line 115, ../_loom_compass/scss/loom/layout/_grid.scss */
+  .column.size1of2 {
+    width: 50%;
+  }
+  /* line 116, ../_loom_compass/scss/loom/layout/_grid.scss */
+  .column.size1of3 {
+    width: 33.33333%;
+  }
+  /* line 117, ../_loom_compass/scss/loom/layout/_grid.scss */
+  .column.size2of3 {
+    width: 66.66666%;
+  }
+  /* line 118, ../_loom_compass/scss/loom/layout/_grid.scss */
+  .column.size1of4 {
+    width: 25%;
+  }
+  /* line 119, ../_loom_compass/scss/loom/layout/_grid.scss */
+  .column.size3of4 {
+    width: 75%;
+  }
+  /* line 120, ../_loom_compass/scss/loom/layout/_grid.scss */
+  .column.size1of5 {
+    width: 20%;
+  }
+  /* line 121, ../_loom_compass/scss/loom/layout/_grid.scss */
+  .column.size2of5 {
+    width: 40%;
+  }
+  /* line 122, ../_loom_compass/scss/loom/layout/_grid.scss */
+  .column.size3of5 {
+    width: 60%;
+  }
+  /* line 123, ../_loom_compass/scss/loom/layout/_grid.scss */
+  .column.size4of5 {
+    width: 80%;
+  }
+  /* line 124, ../_loom_compass/scss/loom/layout/_grid.scss */
+  .column.right {
+    float: right;
+  }
+}
+@media only screen and (min-width: 68.57143em) {
+  /* line 128, ../_loom_compass/scss/loom/layout/_grid.scss */
+  .column.right1of2 {
+    padding-right: 50%;
+  }
+  /* line 129, ../_loom_compass/scss/loom/layout/_grid.scss */
+  .column.right1of3 {
+    padding-right: 33.33333%;
+  }
+  /* line 130, ../_loom_compass/scss/loom/layout/_grid.scss */
+  .column.right2of3 {
+    padding-right: 66.66666%;
+  }
+  /* line 131, ../_loom_compass/scss/loom/layout/_grid.scss */
+  .column.right1of4 {
+    padding-right: 25%;
+  }
+  /* line 132, ../_loom_compass/scss/loom/layout/_grid.scss */
+  .column.right3of4 {
+    padding-right: 75%;
+  }
+  /* line 133, ../_loom_compass/scss/loom/layout/_grid.scss */
+  .column.right1of5 {
+    padding-right: 20%;
+  }
+  /* line 134, ../_loom_compass/scss/loom/layout/_grid.scss */
+  .column.right2of5 {
+    padding-right: 40%;
+  }
+  /* line 135, ../_loom_compass/scss/loom/layout/_grid.scss */
+  .column.right3of5 {
+    padding-right: 60%;
+  }
+  /* line 136, ../_loom_compass/scss/loom/layout/_grid.scss */
+  .column.right4of5 {
+    padding-right: 80%;
+  }
+}
+
+/* line 144, ../_loom_compass/scss/loom/layout/_grid.scss */
+.panel {
+  padding: 24px;
+}
+
+/* line 148, ../_loom_compass/scss/loom/layout/_grid.scss */
+.size1of1 {
+  float: none;
+}
+
+/* Modules */
+/* Nav Top Bar */
+/* line 2, ../_loom_compass/scss/loom/modules/_control.scss */
+.control .row {
+  padding-left: 0;
+  padding-right: 0;
+}
+@media only screen and (min-width: 54.85714em) {
+  /* line 2, ../_loom_compass/scss/loom/modules/_control.scss */
+  .control .row {
+    width: 100%;
+    padding: 24px;
+  }
+}
+
+/* line 13, ../_loom_compass/scss/loom/modules/_control.scss */
+.logo {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  width: 330px;
+  min-height: 50px;
+}
+
+/* WP Import */
+/* Wp-navigation */
+/* Wp-layout */
+@media only screen and (min-width: 54.85714em) {
+  /* line 7, ../_loom_compass/scss/loom/views/_wp-layout.scss */
+  #header .logo,
+  .footer .copyright {
+    float: left;
+  }
+}
+
+/* line 19, ../_loom_compass/scss/loom/views/_wp-layout.scss */
+#header-ext {
+  text-align: center;
+}
+/* line 22, ../_loom_compass/scss/loom/views/_wp-layout.scss */
+#header-ext h2 {
+  font-family: "Sentinel SSm A", "Sentinel SSm B", Georgia, serif;
+  font-weight: 400;
+  font-style: italic;
+}
+
+/* line 28, ../_loom_compass/scss/loom/views/_wp-layout.scss */
+#header-ext, #footer-ext {
+  color: white;
+  background-color: #182033;
+}
+/* line 32, ../_loom_compass/scss/loom/views/_wp-layout.scss */
+#header-ext a, #footer-ext a {
+  color: white;
+}
+
+/* line 37, ../_loom_compass/scss/loom/views/_wp-layout.scss */
+#header .top {
+  padding: 24px;
+}
+
+/* line 43, ../_loom_compass/scss/loom/views/_wp-layout.scss */
+#homepage {
+  color: white;
+  background-color: #de7c35;
+}
+/* line 47, ../_loom_compass/scss/loom/views/_wp-layout.scss */
+#homepage a {
+  color: white;
+}
+/* line 51, ../_loom_compass/scss/loom/views/_wp-layout.scss */
+#homepage h2 {
+  font-family: "Sentinel SSm A", "Sentinel SSm B", Georgia, serif;
+  font-size: 3.71429rem;
+  font-weight: 500;
+  line-height: 3.71429rem;
+}
+@media only screen and (min-width: 54.85714em) {
+  /* line 51, ../_loom_compass/scss/loom/views/_wp-layout.scss */
+  #homepage h2 {
+    font-size: 5.14286rem;
+  }
+}
+
+/* line 62, ../_loom_compass/scss/loom/views/_wp-layout.scss */
+.fig-border {
+  border: 0.5em solid white;
+}
+
+/* line 69, ../_loom_compass/scss/loom/views/_wp-layout.scss */
+#header .bottom h1,
+#homepage h1,
+.we-are-nyc h2,
+.footer h2 {
+  font-family: "Knockout 26 A", "Knockout 26 B", "HelveticaNeueLightCondensed", "HelveticaNeue-Light-Condensed", "Helvetica Neue Light Condensed", "HelveticaNeueLight", "HelveticaNeue-Light", "Helvetica Neue Light", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: 400;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+/* line 77, ../_loom_compass/scss/loom/views/_wp-layout.scss */
+.we-are-nyc {
+  padding-bottom: 0;
+}
+
+/* line 82, ../_loom_compass/scss/loom/views/_wp-layout.scss */
+.we-are-nyc h2,
+.footer h2 {
+  font-size: 5.14286rem;
+  padding: 3rem 0;
+  line-height: 5.14286rem;
+}
+
+/* line 88, ../_loom_compass/scss/loom/views/_wp-layout.scss */
+.point {
+  min-height: 28.57143em;
+}
+
+/* line 92, ../_loom_compass/scss/loom/views/_wp-layout.scss */
+.bg-photo {
+  color: white;
+  background-color: #182033;
+}
+
+/* line 97, ../_loom_compass/scss/loom/views/_wp-layout.scss */
+.bg-graphic {
+  position: relative;
+}
+
+/* line 101, ../_loom_compass/scss/loom/views/_wp-layout.scss */
+.p-centered {
+  text-align: center;
+}
+@media only screen and (min-width: 54.85714em) {
+  /* line 101, ../_loom_compass/scss/loom/views/_wp-layout.scss */
+  .p-centered {
+    padding: 0 96px;
+  }
+}
+
+/* line 108, ../_loom_compass/scss/loom/views/_wp-layout.scss */
+.p-right {
+  text-align: right;
+}
+
+/* line 112, ../_loom_compass/scss/loom/views/_wp-layout.scss */
+img {
+  display: block;
+}
+
+/* line 117, ../_loom_compass/scss/loom/views/_wp-layout.scss */
+#skyline {
+  width: 100%;
+  text-align: center;
+  bottom: 0;
+}
+/* line 123, ../_loom_compass/scss/loom/views/_wp-layout.scss */
+#skyline img {
+  margin: 0 auto;
+}
+
+/* line 126, ../_loom_compass/scss/loom/views/_wp-layout.scss */
+.partners h3 {
+  text-align: center;
+}
+
+/* line 132, ../_loom_compass/scss/loom/views/_wp-layout.scss */
+.footer-sponsor-group img {
+  margin: 0 auto;
+}
+
+/* line 137, ../_loom_compass/scss/loom/views/_wp-layout.scss */
+.copyright, .site-by {
+  font-size: 0.85714rem;
+}
+
+/* line 142, ../_loom_compass/scss/loom/views/_wp-layout.scss */
+.site-by {
+  clear: both;
+  display: block;
+  text-align: center;
+}
+
+/* line 150, ../_loom_compass/scss/loom/views/_wp-layout.scss */
+.session {
+  padding-top: 1.71429rem;
+  padding-bottom: 1.71429rem;
+}
+@media only screen and (min-width: 54.85714em) {
+  /* line 150, ../_loom_compass/scss/loom/views/_wp-layout.scss */
+  .session {
+    padding-top: 1.75rem;
+    padding-bottom: 1.75rem;
+  }
+}
+@media only screen and (min-width: 85.71429em) {
+  /* line 150, ../_loom_compass/scss/loom/views/_wp-layout.scss */
+  .session {
+    padding-top: 1.66667rem;
+    padding-bottom: 1.66667rem;
+  }
+}
+
+/* line 165, ../_loom_compass/scss/loom/views/_wp-layout.scss */
+ol.event-agenda {
+  list-style-type: none;
+}
+
+/* line 169, ../_loom_compass/scss/loom/views/_wp-layout.scss */
+.session {
+  overflow: hidden;
+  padding-left: .5em;
+  padding-right: .5em;
+}
+
+/* line 176, ../_loom_compass/scss/loom/views/_wp-layout.scss */
+ol.event-agenda .session:nth-child(even) {
+  background-color: rgba(0, 0, 0, 0.05);
+}
