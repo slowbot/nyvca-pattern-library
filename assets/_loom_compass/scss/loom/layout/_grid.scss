@@ -25,11 +25,30 @@ $size4of5-width: 80%;
           box-sizing: border-box;
 }
 
+.clear {
+    content: "";
+    display: table;
+    clear: both;
+    }
+
 // Class Grid based on OOCSS 
 
-.row, %row { 
+.full {
+  padding: 0;
+  max-width: 100%;
+
+  &:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+
+}
+
+.row,
+main[role=main] { 
   width: 100%;
-  padding: $row-padding * 2 $row-padding; 
+  padding: $row-padding; 
   
   &:after {
     content: "";
@@ -48,16 +67,11 @@ $size4of5-width: 80%;
     }
   }  
   
-  &.full {
-    padding: 0;
-    max-width: 100%;
-  }
-  
   @include breakpoint( medium ) {
     max-width: $row-medium-max-width;
     margin-left: auto;
     margin-right: auto;
-    padding: $row-padding * 2 $row-padding * 4;    
+    padding: $row-padding $row-padding * 4;    
   }
   
   .row {
@@ -88,12 +102,14 @@ $size4of5-width: 80%;
 // Medium up floated elements
 
 .column { 
-  float:left;
-  padding-right: $column-padding; 
+  
+  padding-right: 0;
   padding-bottom: $column-padding;
   
   @include breakpoint( medium ) {
+  float:left;
   padding-bottom: 0;
+  padding-right: $column-padding; 
   
   &.size1of1 { float: none;}
   &.size1of2 { width: $size1of2-width; }
@@ -126,3 +142,7 @@ $size4of5-width: 80%;
 .column:last-of-type {  }
 
 .panel { padding: $row-padding }
+
+// Fluid sizes
+
+.size1of1 { float: none; }

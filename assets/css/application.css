@@ -447,200 +447,227 @@ footer {
   box-sizing: border-box;
 }
 
-/* line 30, ../_loom_compass/scss/loom/layout/_grid.scss */
-.row, #header .top, #header .bottom, .footer {
-  width: 100%;
-  padding: 48px 24px;
-}
-/* line 34, ../_loom_compass/scss/loom/layout/_grid.scss */
-.row:after, #header .top:after, #header .bottom:after, .footer:after {
+/* line 28, ../_loom_compass/scss/loom/layout/_grid.scss */
+.clear {
   content: "";
   display: table;
   clear: both;
 }
-/* line 40, ../_loom_compass/scss/loom/layout/_grid.scss */
-.row.collapse, #header .collapse.top, #header .collapse.bottom, .collapse.footer {
-  padding: 0;
-}
-/* line 44, ../_loom_compass/scss/loom/layout/_grid.scss */
-.row.collapse-tall, #header .collapse-tall.top, #header .collapse-tall.bottom, .collapse-tall.footer {
-  padding: 0;
-}
-@media only screen and (min-width: 54.85714em) {
-  /* line 44, ../_loom_compass/scss/loom/layout/_grid.scss */
-  .row.collapse-tall, #header .collapse-tall.top, #header .collapse-tall.bottom, .collapse-tall.footer {
-    padding: 0 96px;
-  }
-}
-/* line 51, ../_loom_compass/scss/loom/layout/_grid.scss */
-.row.full, #header .full.top, #header .full.bottom, .full.footer {
+
+/* line 36, ../_loom_compass/scss/loom/layout/_grid.scss */
+.full {
   padding: 0;
   max-width: 100%;
 }
+/* line 40, ../_loom_compass/scss/loom/layout/_grid.scss */
+.full:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* line 49, ../_loom_compass/scss/loom/layout/_grid.scss */
+.row,
+main[role=main] {
+  width: 100%;
+  padding: 24px;
+}
+/* line 53, ../_loom_compass/scss/loom/layout/_grid.scss */
+.row:after,
+main[role=main]:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+/* line 59, ../_loom_compass/scss/loom/layout/_grid.scss */
+.row.collapse,
+main[role=main].collapse {
+  padding: 0;
+}
+/* line 63, ../_loom_compass/scss/loom/layout/_grid.scss */
+.row.collapse-tall,
+main[role=main].collapse-tall {
+  padding: 0;
+}
 @media only screen and (min-width: 54.85714em) {
-  /* line 30, ../_loom_compass/scss/loom/layout/_grid.scss */
-  .row, #header .top, #header .bottom, .footer {
+  /* line 63, ../_loom_compass/scss/loom/layout/_grid.scss */
+  .row.collapse-tall,
+  main[role=main].collapse-tall {
+    padding: 0 96px;
+  }
+}
+@media only screen and (min-width: 54.85714em) {
+  /* line 49, ../_loom_compass/scss/loom/layout/_grid.scss */
+  .row,
+  main[role=main] {
     max-width: 85.71429em;
     margin-left: auto;
     margin-right: auto;
-    padding: 48px 96px;
+    padding: 24px 96px;
   }
 }
-/* line 63, ../_loom_compass/scss/loom/layout/_grid.scss */
-.row .row, #header .top .row, #header .bottom .row, .footer .row {
+/* line 77, ../_loom_compass/scss/loom/layout/_grid.scss */
+.row .row,
+main[role=main] .row {
   margin-left: 0;
   margin-right: 0;
   padding: 0;
 }
 
-/* line 72, ../_loom_compass/scss/loom/layout/_grid.scss */
+/* line 86, ../_loom_compass/scss/loom/layout/_grid.scss */
 .unit {
   float: left;
 }
-/* line 73, ../_loom_compass/scss/loom/layout/_grid.scss */
+/* line 87, ../_loom_compass/scss/loom/layout/_grid.scss */
 .unit.size1of1 {
   float: none;
 }
-/* line 74, ../_loom_compass/scss/loom/layout/_grid.scss */
+/* line 88, ../_loom_compass/scss/loom/layout/_grid.scss */
 .unit.size1of2 {
   width: 50%;
 }
-/* line 75, ../_loom_compass/scss/loom/layout/_grid.scss */
+/* line 89, ../_loom_compass/scss/loom/layout/_grid.scss */
 .unit.size1of3 {
   width: 33.33333%;
 }
-/* line 76, ../_loom_compass/scss/loom/layout/_grid.scss */
+/* line 90, ../_loom_compass/scss/loom/layout/_grid.scss */
 .unit.size2of3 {
   width: 66.66666%;
 }
-/* line 77, ../_loom_compass/scss/loom/layout/_grid.scss */
+/* line 91, ../_loom_compass/scss/loom/layout/_grid.scss */
 .unit.size1of4 {
   width: 25%;
 }
-/* line 78, ../_loom_compass/scss/loom/layout/_grid.scss */
+/* line 92, ../_loom_compass/scss/loom/layout/_grid.scss */
 .unit.size3of4 {
   width: 75%;
 }
-/* line 79, ../_loom_compass/scss/loom/layout/_grid.scss */
+/* line 93, ../_loom_compass/scss/loom/layout/_grid.scss */
 .unit.size1of5 {
   width: 20%;
 }
-/* line 80, ../_loom_compass/scss/loom/layout/_grid.scss */
+/* line 94, ../_loom_compass/scss/loom/layout/_grid.scss */
 .unit.size2of5 {
   width: 40%;
 }
-/* line 81, ../_loom_compass/scss/loom/layout/_grid.scss */
+/* line 95, ../_loom_compass/scss/loom/layout/_grid.scss */
 .unit.size3of5 {
   width: 60%;
 }
-/* line 82, ../_loom_compass/scss/loom/layout/_grid.scss */
+/* line 96, ../_loom_compass/scss/loom/layout/_grid.scss */
 .unit.size4of5 {
   width: 80%;
 }
 
-/* line 85, ../_loom_compass/scss/loom/layout/_grid.scss */
+/* line 99, ../_loom_compass/scss/loom/layout/_grid.scss */
 .unit-right {
   float: right;
 }
 
-/* line 90, ../_loom_compass/scss/loom/layout/_grid.scss */
+/* line 104, ../_loom_compass/scss/loom/layout/_grid.scss */
 .column {
-  float: left;
-  padding-right: 24px;
+  padding-right: 0;
   padding-bottom: 24px;
 }
 @media only screen and (min-width: 54.85714em) {
-  /* line 90, ../_loom_compass/scss/loom/layout/_grid.scss */
+  /* line 104, ../_loom_compass/scss/loom/layout/_grid.scss */
   .column {
+    float: left;
     padding-bottom: 0;
+    padding-right: 24px;
   }
-  /* line 98, ../_loom_compass/scss/loom/layout/_grid.scss */
+  /* line 114, ../_loom_compass/scss/loom/layout/_grid.scss */
   .column.size1of1 {
     float: none;
   }
-  /* line 99, ../_loom_compass/scss/loom/layout/_grid.scss */
+  /* line 115, ../_loom_compass/scss/loom/layout/_grid.scss */
   .column.size1of2 {
     width: 50%;
   }
-  /* line 100, ../_loom_compass/scss/loom/layout/_grid.scss */
+  /* line 116, ../_loom_compass/scss/loom/layout/_grid.scss */
   .column.size1of3 {
     width: 33.33333%;
   }
-  /* line 101, ../_loom_compass/scss/loom/layout/_grid.scss */
+  /* line 117, ../_loom_compass/scss/loom/layout/_grid.scss */
   .column.size2of3 {
     width: 66.66666%;
   }
-  /* line 102, ../_loom_compass/scss/loom/layout/_grid.scss */
+  /* line 118, ../_loom_compass/scss/loom/layout/_grid.scss */
   .column.size1of4 {
     width: 25%;
   }
-  /* line 103, ../_loom_compass/scss/loom/layout/_grid.scss */
+  /* line 119, ../_loom_compass/scss/loom/layout/_grid.scss */
   .column.size3of4 {
     width: 75%;
   }
-  /* line 104, ../_loom_compass/scss/loom/layout/_grid.scss */
+  /* line 120, ../_loom_compass/scss/loom/layout/_grid.scss */
   .column.size1of5 {
     width: 20%;
   }
-  /* line 105, ../_loom_compass/scss/loom/layout/_grid.scss */
+  /* line 121, ../_loom_compass/scss/loom/layout/_grid.scss */
   .column.size2of5 {
     width: 40%;
   }
-  /* line 106, ../_loom_compass/scss/loom/layout/_grid.scss */
+  /* line 122, ../_loom_compass/scss/loom/layout/_grid.scss */
   .column.size3of5 {
     width: 60%;
   }
-  /* line 107, ../_loom_compass/scss/loom/layout/_grid.scss */
+  /* line 123, ../_loom_compass/scss/loom/layout/_grid.scss */
   .column.size4of5 {
     width: 80%;
   }
-  /* line 108, ../_loom_compass/scss/loom/layout/_grid.scss */
+  /* line 124, ../_loom_compass/scss/loom/layout/_grid.scss */
   .column.right {
     float: right;
   }
 }
 @media only screen and (min-width: 68.57143em) {
-  /* line 112, ../_loom_compass/scss/loom/layout/_grid.scss */
+  /* line 128, ../_loom_compass/scss/loom/layout/_grid.scss */
   .column.right1of2 {
     padding-right: 50%;
   }
-  /* line 113, ../_loom_compass/scss/loom/layout/_grid.scss */
+  /* line 129, ../_loom_compass/scss/loom/layout/_grid.scss */
   .column.right1of3 {
     padding-right: 33.33333%;
   }
-  /* line 114, ../_loom_compass/scss/loom/layout/_grid.scss */
+  /* line 130, ../_loom_compass/scss/loom/layout/_grid.scss */
   .column.right2of3 {
     padding-right: 66.66666%;
   }
-  /* line 115, ../_loom_compass/scss/loom/layout/_grid.scss */
+  /* line 131, ../_loom_compass/scss/loom/layout/_grid.scss */
   .column.right1of4 {
     padding-right: 25%;
   }
-  /* line 116, ../_loom_compass/scss/loom/layout/_grid.scss */
+  /* line 132, ../_loom_compass/scss/loom/layout/_grid.scss */
   .column.right3of4 {
     padding-right: 75%;
   }
-  /* line 117, ../_loom_compass/scss/loom/layout/_grid.scss */
+  /* line 133, ../_loom_compass/scss/loom/layout/_grid.scss */
   .column.right1of5 {
     padding-right: 20%;
   }
-  /* line 118, ../_loom_compass/scss/loom/layout/_grid.scss */
+  /* line 134, ../_loom_compass/scss/loom/layout/_grid.scss */
   .column.right2of5 {
     padding-right: 40%;
   }
-  /* line 119, ../_loom_compass/scss/loom/layout/_grid.scss */
+  /* line 135, ../_loom_compass/scss/loom/layout/_grid.scss */
   .column.right3of5 {
     padding-right: 60%;
   }
-  /* line 120, ../_loom_compass/scss/loom/layout/_grid.scss */
+  /* line 136, ../_loom_compass/scss/loom/layout/_grid.scss */
   .column.right4of5 {
     padding-right: 80%;
   }
 }
 
-/* line 128, ../_loom_compass/scss/loom/layout/_grid.scss */
+/* line 144, ../_loom_compass/scss/loom/layout/_grid.scss */
 .panel {
   padding: 24px;
+}
+
+/* line 148, ../_loom_compass/scss/loom/layout/_grid.scss */
+.size1of1 {
+  float: none;
 }
 
 /* WP Import */
