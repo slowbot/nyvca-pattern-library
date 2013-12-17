@@ -1,0 +1,44 @@
+//Footer
+
+footer {
+  padding-top: $row-padding * 2; 
+  padding-bottom: $row-padding * 2; 
+}
+
+
+#skyline {
+  //position: absolute;
+  width: 100%;
+  text-align: center;
+  bottom: 0;
+    
+    img { margin: 0 auto; }
+}
+
+.partners h3 {
+  text-align: center;
+}
+
+.footer-sponsor-group {
+  @extend %rythmn-unit;
+  img {
+    margin: 0 auto;
+  }
+}
+
+.copyright, .site-by {
+  font-size: remCalc( 12px );
+  @extend %rythmn-unit;
+}
+
+.site-by {
+  clear: both;
+  display: block;
+  text-align: center;
+}
+
+footer .menu {
+  @include breakpoint( medium ) {
+  float: right;
+  }
+}

@@ -147,6 +147,16 @@ h6,
 	@extend %rythmn-unit;
 }
 
+.mega {
+    font-size: remCalc( 52px );
+    line-height: remCalc( 52px );
+    font-weight: 500;
+    
+    @include breakpoint( medium ) {
+      font-size: remCalc( 84px );
+    } 
+  }
+
 p {
   font-weight: 300;
   @extend %rythmn-unit;
@@ -157,11 +167,23 @@ a {
   text-decoration: none;
 }
 
+.menu a {
+  @include breakpoint( medium ) {
+  font-size: 80%;
+  }
+}
+
 .serif {
   font-family: $font-family;
 }
 
-nav li,
 .sans {
   font-family: $sans-font-family;
+}
+
+.condensed {
+  font-family: $condensed-font-family;
+  font-weight: 400;
+  text-transform: uppercase;
+  text-align: center; 
 }

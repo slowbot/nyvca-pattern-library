@@ -1,4 +1,4 @@
-a.menu-link {
+  a.menu-link {
   	    float: right;
 		    display: block;
 		    padding: 1em;
@@ -42,12 +42,16 @@ a.menu-link {
 				border: 0;
 			}
 			
+			.menu .menu-item, 
 			nav[role=navigation]  li {
 				display: inline-block;
 				margin: 0 0.25em;
 			}
+			
+			.menu .menu-item a,
 			nav[role=navigation] li a {
 				border: 0;
 				padding: .4em 1em;
 			}
 		}
+	

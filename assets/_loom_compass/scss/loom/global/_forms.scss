@@ -1,0 +1,7 @@
+.btn-circle {
+  display: block;
+  background: rgba(0, 0, 0, .2);
+  @include border-radius(50%);
+  height: remCalc( 52px );
+  width: remCalc( 52px );
+}

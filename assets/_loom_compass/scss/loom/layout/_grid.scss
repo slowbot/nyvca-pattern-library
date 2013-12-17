@@ -142,6 +142,10 @@ $size4of5-width: 80%;
 
 .panel { padding: $row-padding }
 
-// Fluid sizes
-
-.size1of1 { float: none; }
+// Tall
+@include breakpoint( medium ) {
+  .tall {
+    padding-top: $row-padding * 4;
+    padding-bottom: $row-padding * 4;
+  }
+}
