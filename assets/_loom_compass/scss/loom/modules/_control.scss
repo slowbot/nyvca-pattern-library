@@ -15,7 +15,7 @@
   position: absolute;
   top: $row-padding;
   left: $row-padding;
-  width: 330px;
+  width: 280px;
   
   @include breakpoint( medium ) {
     left: $row-padding * 4;

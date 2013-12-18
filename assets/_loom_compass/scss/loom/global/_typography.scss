@@ -128,7 +128,6 @@ h4,
 .delta {
   font-size: remCalc( 16px );
 	@extend %hN;
-	@extend %rythmn-unit;
 }
 
 h5,
@@ -136,12 +135,11 @@ h5,
   font-size: remCalc( 14px );
 	@extend %hN;
 	line-height: remCalc( 28px );
-	@extend %rythmn-unit;
 }
 
 h6,
 .zeta {
-  font-size: remCalc( 16px );
+  font-size: remCalc( 12px );
 	@extend %hN;
 	line-height: remCalc( 22px );
 	@extend %rythmn-unit;
@@ -167,6 +165,12 @@ a {
   text-decoration: none;
 }
 
+a:hover {
+  transition: ease-in-out all .4s; 
+  -moz-transition: ease-in-out all .4s;
+  -webkit-transition: ease-in-out all .4s;
+}
+
 .menu a {
   @include breakpoint( medium ) {
   font-size: 80%;
@@ -186,4 +190,9 @@ a {
   font-weight: 400;
   text-transform: uppercase;
   text-align: center; 
+}
+
+.pill {
+  padding: .25em .5em;
+  background-color: $tint-color;
 }

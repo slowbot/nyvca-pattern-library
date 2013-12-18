@@ -4,7 +4,9 @@
 }
 
 .point {
+  @include breakpoint( medium ) {
   min-height: emCalc( 400px );
+  }
 }
 
 .bg-graphic {
@@ -22,6 +24,17 @@
   text-align: right; 
 }
 
+
+
+.bg-citylights { 
+  background: linear-gradient( rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45) ), url(/assets/img/bg-citylights.jpg);
+}  
+
+.bg-wallst { 
+  background: linear-gradient( rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45) ), url(/assets/img/bg-wallst.jpg);
+  background-position-y: -120px;
+}  
+
 .bg-photo {
   -webkit-background-size: cover;
   -moz-background-size: cover;
@@ -29,17 +42,12 @@
   background-size: cover;
 }
 
-.bg-citylights { 
-  background-image: url(/assets/img/bg-citylights.jpg);
-}  
-
-.bg-wallst { 
-  background-image: url(/assets/img/bg-wallst.jpg);
-  background-position-y: -120px;
-}  
-
 .bg-skyline { 
   background-image: url(/assets/img/bg-skyline.png);
   background-position-y: bottom;
   background-repeat: repeat-x;
+  
+  &.tall {
+  padding-top: $row-padding * 3;
+  }
 }  

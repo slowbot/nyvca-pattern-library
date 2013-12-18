@@ -143,9 +143,13 @@ $size4of5-width: 80%;
 .panel { padding: $row-padding }
 
 // Tall
-@include breakpoint( medium ) {
+
   .tall {
+    padding-top: $row-padding;
+    padding-bottom: $row-padding;
+  
+    @include breakpoint( medium ) {
     padding-top: $row-padding * 4;
     padding-bottom: $row-padding * 4;
+    }
   }
-}
