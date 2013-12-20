@@ -87,6 +87,7 @@
 .session-description {
   padding: 2em 2em 2em 3em;
   border: 2px solid $primary-color;
+  @include box-shadow(4px 6px 0 rgba(0, 0, 0, 0.075));
 }
 
 .minor {
@@ -94,6 +95,7 @@
   padding-bottom: 0;
 .session-description {
   border: 0;
+   @include box-shadow(none);
   }
   
  h2 {
@@ -168,9 +170,9 @@
 }
 
 .bulleted { 
-  margin-left: -3.5em;
+  margin-left: -4em;
   @include breakpoint( medium ) {
-    margin-left: -2em;
+    margin-left: -2.5em;
   }
   
   h2 {
@@ -179,9 +181,14 @@
   
   .icon-circle {
     float: left;
-    padding-right: 1em;
-
-    text-shadow: 2px 2px 4px $blank-color;
+    text-align: center;
+    margin-right: 1em;
+    width: emCalc(28px);
+    
+    background-color: rgba(0, 0, 0, .08);
+    @include border-radius(50%);
+    
+    //text-shadow: 2px 2px 4px $blank-color;
   }
 }
 

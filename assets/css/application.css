@@ -1164,50 +1164,56 @@ footer {
 .session-description {
   padding: 2em 2em 2em 3em;
   border: 2px solid #de7c35;
+  -webkit-box-shadow: 4px 6px 0 rgba(0, 0, 0, 0.075);
+  -moz-box-shadow: 4px 6px 0 rgba(0, 0, 0, 0.075);
+  box-shadow: 4px 6px 0 rgba(0, 0, 0, 0.075);
 }
 
-/* line 92, ../_loom_compass/scss/loom/modules/_agenda.scss */
+/* line 93, ../_loom_compass/scss/loom/modules/_agenda.scss */
 .minor {
   padding-top: 0;
   padding-bottom: 0;
 }
-/* line 95, ../_loom_compass/scss/loom/modules/_agenda.scss */
+/* line 96, ../_loom_compass/scss/loom/modules/_agenda.scss */
 .minor .session-description {
   border: 0;
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
 }
-/* line 99, ../_loom_compass/scss/loom/modules/_agenda.scss */
+/* line 101, ../_loom_compass/scss/loom/modules/_agenda.scss */
 .minor h2 {
   font-size: 100%;
   margin: 0;
 }
 
-/* line 106, ../_loom_compass/scss/loom/modules/_agenda.scss */
+/* line 108, ../_loom_compass/scss/loom/modules/_agenda.scss */
 .people {
   text-align: center;
 }
-/* line 109, ../_loom_compass/scss/loom/modules/_agenda.scss */
+/* line 111, ../_loom_compass/scss/loom/modules/_agenda.scss */
 .people li {
   display: block;
   vertical-align: middle;
 }
-/* line 112, ../_loom_compass/scss/loom/modules/_agenda.scss */
+/* line 114, ../_loom_compass/scss/loom/modules/_agenda.scss */
 .people li:after {
   content: "";
   display: table;
   clear: both;
 }
 @media only screen and (min-width: 54.85714em) {
-  /* line 109, ../_loom_compass/scss/loom/modules/_agenda.scss */
+  /* line 111, ../_loom_compass/scss/loom/modules/_agenda.scss */
   .people li {
     text-align: left;
   }
 }
-/* line 122, ../_loom_compass/scss/loom/modules/_agenda.scss */
+/* line 124, ../_loom_compass/scss/loom/modules/_agenda.scss */
 .people li .name {
   padding-top: 1em;
 }
 
-/* line 130, ../_loom_compass/scss/loom/modules/_agenda.scss */
+/* line 132, ../_loom_compass/scss/loom/modules/_agenda.scss */
 .iframe-rwd {
   position: relative;
   padding-bottom: 35.25%;
@@ -1216,13 +1222,13 @@ footer {
   overflow: hidden;
 }
 @media only screen and (min-width: 54.85714em) {
-  /* line 130, ../_loom_compass/scss/loom/modules/_agenda.scss */
+  /* line 132, ../_loom_compass/scss/loom/modules/_agenda.scss */
   .iframe-rwd {
     padding-bottom: 25.25%;
   }
 }
 
-/* line 140, ../_loom_compass/scss/loom/modules/_agenda.scss */
+/* line 142, ../_loom_compass/scss/loom/modules/_agenda.scss */
 .iframe-rwd iframe {
   position: absolute;
   top: 0;
@@ -1232,52 +1238,59 @@ footer {
 }
 
 @media only screen and (min-width: 54.85714em) {
-  /* line 149, ../_loom_compass/scss/loom/modules/_agenda.scss */
+  /* line 151, ../_loom_compass/scss/loom/modules/_agenda.scss */
   .menu-event {
     margin-top: 3em;
   }
 }
 
-/* line 155, ../_loom_compass/scss/loom/modules/_agenda.scss */
+/* line 157, ../_loom_compass/scss/loom/modules/_agenda.scss */
 .menu-event .menu-item {
   text-transform: uppercase;
 }
 @media only screen and (min-width: 54.85714em) {
-  /* line 155, ../_loom_compass/scss/loom/modules/_agenda.scss */
+  /* line 157, ../_loom_compass/scss/loom/modules/_agenda.scss */
   .menu-event .menu-item {
     margin: 0 2em;
   }
 }
 
 @media only screen and (min-width: 54.85714em) {
-  /* line 163, ../_loom_compass/scss/loom/modules/_agenda.scss */
+  /* line 165, ../_loom_compass/scss/loom/modules/_agenda.scss */
   .header-event h2, .header-event h3, .header-event p {
     margin-bottom: 3rem;
   }
 }
 
-/* line 170, ../_loom_compass/scss/loom/modules/_agenda.scss */
+/* line 172, ../_loom_compass/scss/loom/modules/_agenda.scss */
 .bulleted {
-  margin-left: -3.5em;
+  margin-left: -4em;
 }
 @media only screen and (min-width: 54.85714em) {
-  /* line 170, ../_loom_compass/scss/loom/modules/_agenda.scss */
+  /* line 172, ../_loom_compass/scss/loom/modules/_agenda.scss */
   .bulleted {
-    margin-left: -2em;
+    margin-left: -2.5em;
   }
 }
-/* line 176, ../_loom_compass/scss/loom/modules/_agenda.scss */
+/* line 178, ../_loom_compass/scss/loom/modules/_agenda.scss */
 .bulleted h2 {
   margin-left: 1em;
 }
-/* line 180, ../_loom_compass/scss/loom/modules/_agenda.scss */
+/* line 182, ../_loom_compass/scss/loom/modules/_agenda.scss */
 .bulleted .icon-circle {
   float: left;
-  padding-right: 1em;
-  text-shadow: 2px 2px 4px white;
+  text-align: center;
+  margin-right: 1em;
+  width: 2em;
+  background-color: rgba(0, 0, 0, 0.08);
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  border-radius: 50%;
 }
 
-/* line 188, ../_loom_compass/scss/loom/modules/_agenda.scss */
+/* line 195, ../_loom_compass/scss/loom/modules/_agenda.scss */
 .vertical-timeline {
   position: absolute;
   width: 100%;
@@ -1286,13 +1299,13 @@ footer {
   left: 0;
   z-index: -1;
 }
-/* line 197, ../_loom_compass/scss/loom/modules/_agenda.scss */
+/* line 204, ../_loom_compass/scss/loom/modules/_agenda.scss */
 .vertical-timeline .row {
   padding-top: 0;
   padding-bottom: 0;
   height: 100%;
 }
-/* line 207, ../_loom_compass/scss/loom/modules/_agenda.scss */
+/* line 214, ../_loom_compass/scss/loom/modules/_agenda.scss */
 .vertical-timeline .column {
   display: none;
   padding: 0;
@@ -1301,7 +1314,7 @@ footer {
   border-right: 1px solid #de7c35;
 }
 @media only screen and (min-width: 54.85714em) {
-  /* line 207, ../_loom_compass/scss/loom/modules/_agenda.scss */
+  /* line 214, ../_loom_compass/scss/loom/modules/_agenda.scss */
   .vertical-timeline .column {
     display: block;
   }
