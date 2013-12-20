@@ -145,11 +145,16 @@ $size4of5-width: 80%;
 // Tall
 
   .tall {
-    padding-top: $row-padding;
-    padding-bottom: $row-padding;
+    padding-top: $row-padding * 3;
+    padding-bottom: $row-padding * 3;
   
     @include breakpoint( medium ) {
     padding-top: $row-padding * 4;
     padding-bottom: $row-padding * 4;
     }
   }
+  
+  
+  .collapse-bottom {
+    padding-bottom: 0;
+   } 

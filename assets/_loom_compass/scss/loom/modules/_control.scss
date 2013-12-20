@@ -3,7 +3,7 @@
     position: relative;
     padding-left: 0;
     padding-right: 0;
-   
+    
     @include breakpoint( medium ) {
       width: 100%;
       padding: $row-padding $row-padding * 4; 
@@ -12,12 +12,13 @@
 }
 
 .logo {
-  position: absolute;
-  top: $row-padding;
-  left: $row-padding;
+  float: left;
+  display: block;
+  padding-left: $row-padding;
+  padding-bottom: $row-padding;
   width: 280px;
-  
+
   @include breakpoint( medium ) {
-    left: $row-padding * 4;
+    padding-bottom: 0;    
   }
 }

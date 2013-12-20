@@ -1,24 +1,35 @@
   a.menu-link {
-  	    float: right;
+  	    position: absolute;
+  	    top: $row-padding;
+  	    right: $row-padding;
 		    display: block;
-		    padding: 1em;
+		    line-height: remCalc(52px);
+		    
+		    font-size: remCalc(24px);
 		}
 		
 		nav[role=navigation] {
-			clear: both;
 			-webkit-transition: all 0.3s ease-out;  
 			-moz-transition: all 0.3s ease-out;
 			-ms-transition: all 0.3s ease-out;
 			-o-transition: all 0.3s ease-out;
 			transition: all 0.3s ease-out;
+			&:before {
+        content: "";
+        display: table;
+        clear: both;
+      }
 		}
+		
 		.js nav[role=navigation] {
 			overflow: hidden;
 			max-height: 0;
 		}
+		
 		nav[role=navigation].active {
 			max-height: 15em;
 		}
+		
 		nav[role=navigation] ul {
 			margin: 0;
 			padding: 0;

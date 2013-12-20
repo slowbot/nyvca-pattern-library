@@ -47,7 +47,12 @@
   background-position-y: bottom;
   background-repeat: repeat-x;
   
+  @include breakpoint( medium ) {
+    background-image: url(/assets/img/bg-skyline.png), url(/assets/img/bg-skyline2.png);
+  }
+  
+  
   &.tall {
-  padding-top: $row-padding * 3;
+  padding-bottom: $row-padding * 3;
   }
 }  
