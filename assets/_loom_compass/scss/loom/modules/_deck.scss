@@ -11,6 +11,7 @@
 
 .bg-graphic {
   position: relative;
+  
 }
 
 .p-centered {
@@ -37,6 +38,12 @@
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
+}
+
+.bg-network { 
+  background-repeat: no-repeat;
+  background-position-x: 150%;
+  background-position-y: 30%;
 }
 
 .bg-skyline { 

@@ -1021,28 +1021,28 @@ footer {
   position: relative;
 }
 
-/* line 16, ../_loom_compass/scss/loom/modules/_deck.scss */
+/* line 17, ../_loom_compass/scss/loom/modules/_deck.scss */
 .p-centered {
   text-align: center;
 }
 @media only screen and (min-width: 54.85714em) {
-  /* line 16, ../_loom_compass/scss/loom/modules/_deck.scss */
+  /* line 17, ../_loom_compass/scss/loom/modules/_deck.scss */
   .p-centered {
     padding: 0 96px;
   }
 }
 
-/* line 23, ../_loom_compass/scss/loom/modules/_deck.scss */
+/* line 24, ../_loom_compass/scss/loom/modules/_deck.scss */
 .p-right {
   text-align: right;
 }
 
-/* line 31, ../_loom_compass/scss/loom/modules/_deck.scss */
+/* line 32, ../_loom_compass/scss/loom/modules/_deck.scss */
 .bg-wallst {
   background-position-y: -120px;
 }
 
-/* line 35, ../_loom_compass/scss/loom/modules/_deck.scss */
+/* line 36, ../_loom_compass/scss/loom/modules/_deck.scss */
 .bg-photo {
   -webkit-background-size: cover;
   -moz-background-size: cover;
@@ -1050,13 +1050,20 @@ footer {
   background-size: cover;
 }
 
-/* line 42, ../_loom_compass/scss/loom/modules/_deck.scss */
+/* line 43, ../_loom_compass/scss/loom/modules/_deck.scss */
+.bg-network {
+  background-repeat: no-repeat;
+  background-position-x: 150%;
+  background-position-y: 30%;
+}
+
+/* line 49, ../_loom_compass/scss/loom/modules/_deck.scss */
 .bg-skyline {
   background-image: url(assets/img/bg-skyline.png);
   background-position-y: bottom;
   background-repeat: repeat-x;
 }
-/* line 52, ../_loom_compass/scss/loom/modules/_deck.scss */
+/* line 59, ../_loom_compass/scss/loom/modules/_deck.scss */
 .bg-skyline.tall {
   padding-bottom: 72px;
 }
