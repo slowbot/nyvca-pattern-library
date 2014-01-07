@@ -1039,12 +1039,12 @@ footer {
 
 /* line 29, ../_loom_compass/scss/loom/modules/_deck.scss */
 .bg-citylights {
-  background: linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45)), url(/assets/img/bg-citylights.jpg);
+  background: linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45)), url(assets/img/bg-citylights.jpg);
 }
 
 /* line 33, ../_loom_compass/scss/loom/modules/_deck.scss */
 .bg-wallst {
-  background: linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45)), url(/assets/img/bg-wallst.jpg);
+  background: linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45)), url(assets/img/bg-wallst.jpg);
   background-position-y: -120px;
 }
 
@@ -1058,14 +1058,14 @@ footer {
 
 /* line 45, ../_loom_compass/scss/loom/modules/_deck.scss */
 .bg-skyline {
-  background-image: url(/assets/img/bg-skyline.png);
+  background-image: url(assets/img/bg-skyline.png);
   background-position-y: bottom;
   background-repeat: repeat-x;
 }
 @media only screen and (min-width: 54.85714em) {
   /* line 45, ../_loom_compass/scss/loom/modules/_deck.scss */
   .bg-skyline {
-    background-image: url(/assets/img/bg-skyline.png), url(/assets/img/bg-skyline2.png);
+    background-image: url(assets/img/bg-skyline.png), url(assets/img/bg-skyline2.png);
   }
 }
 /* line 55, ../_loom_compass/scss/loom/modules/_deck.scss */
