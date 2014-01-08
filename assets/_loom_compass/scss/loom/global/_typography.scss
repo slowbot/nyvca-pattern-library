@@ -209,33 +209,36 @@ a:hover {
     @extend %rythmn-unit;
   }
   
-  h2 {
-    
+  h2,
+  .beta {
+    color: $secondary-color;
   }
   
-  h3 {
+  h3,
+  .gamma {
     font-family: $font-family;
   	margin-bottom: 1em;
   }
   
   h4,
   .delta {
-    font-size: remCalc( 16px );
-  	@extend %hN;
+    text-transform: uppercase;
+    font-size: 98%;
   }
   
   h5,
   .epsilon {
-    font-size: remCalc( 14px );
-  	@extend %hN;
-  	line-height: remCalc( 28px );
+
   }
   
   h6,
   .zeta {
-    font-size: remCalc( 12px );
-  	@extend %hN;
-  	line-height: remCalc( 22px );
-  	@extend %rythmn-unit;
+
   }
+  
+  p {
+    
+  }
+  
+  
 }

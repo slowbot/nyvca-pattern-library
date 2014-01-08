@@ -126,10 +126,7 @@ h1,
 .delta, h5,
 .epsilon, h6,
 .zeta, .entry h1,
-.entry .alpha, .entry h4,
-.entry .delta, .entry h5,
-.entry .epsilon, .entry h6,
-.entry .zeta {
+.entry .alpha {
   text-rendering: optimizeLegibility;
   display: block;
   font-weight: 300;
@@ -141,8 +138,7 @@ h1,
 .beta, h3,
 .gamma, h6,
 .zeta, p, .entry h1,
-.entry .alpha, .entry h6,
-.entry .zeta, .footer-sponsor-group, .copyright, .site-by {
+.entry .alpha, .footer-sponsor-group, .copyright, .site-by {
   margin-bottom: 1.71429rem;
 }
 @media only screen and (min-width: 54.85714em) {
@@ -152,8 +148,7 @@ h1,
   .beta, h3,
   .gamma, h6,
   .zeta, p, .entry h1,
-  .entry .alpha, .entry h6,
-  .entry .zeta, .footer-sponsor-group, .copyright, .site-by {
+  .entry .alpha, .footer-sponsor-group, .copyright, .site-by {
     margin-bottom: 1.75rem;
   }
 }
@@ -164,8 +159,7 @@ h1,
   .beta, h3,
   .gamma, h6,
   .zeta, p, .entry h1,
-  .entry .alpha, .entry h6,
-  .entry .zeta, .footer-sponsor-group, .copyright, .site-by {
+  .entry .alpha, .footer-sponsor-group, .copyright, .site-by {
     margin-bottom: 1.66667rem;
   }
 }
@@ -279,27 +273,22 @@ a:hover {
   font-size: 3.71429rem;
   line-height: 3.5rem;
 }
-/* line 216, ../_loom_compass/scss/loom/global/_typography.scss */
-.entry h3 {
+/* line 213, ../_loom_compass/scss/loom/global/_typography.scss */
+.entry h2,
+.entry .beta {
+  color: #182033;
+}
+/* line 218, ../_loom_compass/scss/loom/global/_typography.scss */
+.entry h3,
+.entry .gamma {
   font-family: "Sentinel SSm A", "Sentinel SSm B", Georgia, serif;
   margin-bottom: 1em;
 }
-/* line 222, ../_loom_compass/scss/loom/global/_typography.scss */
+/* line 224, ../_loom_compass/scss/loom/global/_typography.scss */
 .entry h4,
 .entry .delta {
-  font-size: 1.14286rem;
-}
-/* line 228, ../_loom_compass/scss/loom/global/_typography.scss */
-.entry h5,
-.entry .epsilon {
-  font-size: 1rem;
-  line-height: 2rem;
-}
-/* line 235, ../_loom_compass/scss/loom/global/_typography.scss */
-.entry h6,
-.entry .zeta {
-  font-size: 0.85714rem;
-  line-height: 1.57143rem;
+  text-transform: uppercase;
+  font-size: 98%;
 }
 
 /* Icons */
