@@ -198,3 +198,44 @@ a:hover {
   padding: .25em .5em;
   background-color: $tint-color;
 }
+
+
+.entry {
+  h1,
+  .alpha {
+    font-size: remCalc( 52px );
+    @extend %hN;
+    line-height: remCalc( 49px );
+    @extend %rythmn-unit;
+  }
+  
+  h2 {
+    
+  }
+  
+  h3 {
+    font-family: $font-family;
+  	margin-bottom: 1em;
+  }
+  
+  h4,
+  .delta {
+    font-size: remCalc( 16px );
+  	@extend %hN;
+  }
+  
+  h5,
+  .epsilon {
+    font-size: remCalc( 14px );
+  	@extend %hN;
+  	line-height: remCalc( 28px );
+  }
+  
+  h6,
+  .zeta {
+    font-size: remCalc( 12px );
+  	@extend %hN;
+  	line-height: remCalc( 22px );
+  	@extend %rythmn-unit;
+  }
+}
