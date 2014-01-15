@@ -42,9 +42,9 @@
 }
 
 .bg-network { 
-  background-repeat: no-repeat;
-  background-position-x: 0%;
-  background-position-y: 30%;
+  background-repeat: no-repeat; 
+  background-position-x: 0%; 
+  background-position-y: 30%; 
   background-image: url(/assets/img/bg-network.png);
   @include breakpoint( medium ) {
     background-image: none;
