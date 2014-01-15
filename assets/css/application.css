@@ -374,7 +374,27 @@ a:hover {
   content: "\e60b";
 }
 
-/* line 65, ../_loom_compass/scss/loom/global/_icons.scss */
+/* line 64, ../_loom_compass/scss/loom/global/_icons.scss */
+.icon-google:before {
+  content: "\e60c";
+}
+
+/* line 67, ../_loom_compass/scss/loom/global/_icons.scss */
+.icon-facebook:before {
+  content: "\e60d";
+}
+
+/* line 70, ../_loom_compass/scss/loom/global/_icons.scss */
+.icon-twitter:before {
+  content: "\e60e";
+}
+
+/* line 73, ../_loom_compass/scss/loom/global/_icons.scss */
+.icon-linkedin:before {
+  content: "\e60f";
+}
+
+/* line 78, ../_loom_compass/scss/loom/global/_icons.scss */
 .icon-circle {
   font-size: 90%;
   color: #de7c35;
