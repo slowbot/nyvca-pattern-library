@@ -1107,7 +1107,7 @@ footer {
   background-repeat: no-repeat;
   background-position-x: 0%;
   background-position-y: 30%;
-  background-image: url(/assets/img/bg-network.png);
+  background-image: url(../img/bg-network.png);
 }
 @media only screen and (min-width: 54.85714em) {
   /* line 44, ../_loom_compass/scss/loom/modules/_deck.scss */
@@ -1118,7 +1118,7 @@ footer {
 
 /* line 54, ../_loom_compass/scss/loom/modules/_deck.scss */
 .bg-skyline {
-  background-image: url(/assets/img/bg-skyline.png);
+  background-image: url(../img/bg-skyline.png);
   background-position-y: bottom;
   background-repeat: repeat-x;
 }
@@ -1202,7 +1202,7 @@ footer {
   }
   /* line 142, ../_loom_compass/scss/loom/modules/_deck.scss */
   .bg-timeline .art-city {
-    background-image: url(/assets/img/bg-skyline.png), url(/assets/img/bg-skyline2.png);
+    background-image: url(../img/bg-skyline.png), url(../img/bg-skyline2.png);
     background-position-y: bottom;
     background-repeat: repeat-x;
   }
@@ -1212,7 +1212,7 @@ footer {
   }
   /* line 153, ../_loom_compass/scss/loom/modules/_deck.scss */
   .bg-timeline .art-network {
-    background-image: url(/assets/img/bg-network.png);
+    background-image: url(../img/bg-network.png);
     background-position-y: 120%;
     background-repeat: no-repeat;
   }
